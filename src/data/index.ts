@@ -1,5 +1,5 @@
 export const websiteData = {
-  header: {
+  hero: {
     title: "Innovative Software Solutions for Your Business",
     paragraph:
       "We transform your ideas into powerful, scalable software. Let's build the future together.",
