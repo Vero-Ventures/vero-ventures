@@ -1,4 +1,4 @@
-import { HeroDescription, HeroSection, HeroTitle } from "@/components/hero";
+import { HeroSection } from "@/components/hero";
 import { ClientSection } from "@/components/client-section";
 import { OurWorkSection } from "@/components/projects";
 import { AboutUsSection } from "@/components/about";
