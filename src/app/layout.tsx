@@ -17,13 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth bg-primary p-4">
-      <body
-        className={cn(
-          inter.className,
-          "min-h-dvh rounded-lg bg-white antialiased"
-        )}
-      >
+    <html lang="en" className="scroll-smooth bg-primary">
+      <body className={cn(inter.className, "min-h-dvh bg-white antialiased")}>
         <Navbar />
         {children}
         <Footer />
