@@ -17,35 +17,29 @@ export function AboutUsSection() {
           <div className="grid gap-10 pt-20 md:grid-cols-3">
             <TeamCard>
               <TeamCardImage
-                src="https://placehold.co/200x200"
+                src="https://github.com/ynvtlmr.png"
                 alt="placeholder"
               />
               <TeamMember name="Yaniv Talmor" position="CEO" />
             </TeamCard>
             <TeamCard>
-              <TeamCardImage
-                src="https://placehold.co/200x200"
-                alt="placeholder"
-              />
+              <TeamCardImage alt="placeholder" />
               <TeamMember name="Dev Dhillon" position="Marketing Specialist" />
             </TeamCard>
             <TeamCard>
-              <TeamCardImage
-                src="https://placehold.co/200x200"
-                alt="placeholder"
-              />
+              <TeamCardImage alt="placeholder" />
               <TeamMember name="Braden Rogers" position="Software Developer" />
             </TeamCard>
             <TeamCard>
               <TeamCardImage
-                src="https://placehold.co/200x200"
+                src="https://github.com/scottchen98.png"
                 alt="placeholder"
               />
               <TeamMember name="Scott Chen" position="Software Developer" />
             </TeamCard>
             <TeamCard>
               <TeamCardImage
-                src="https://placehold.co/200x200"
+                src="https://media.licdn.com/dms/image/v2/D5603AQGxDovhPB4UZw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1702798993128?e=1729728000&v=beta&t=DZSd1O0_AeMgLR4w-HiqSaA8d7bAZQvUgBm_I0MQa3s"
                 alt="placeholder"
               />
               <TeamMember name="Michael Lei" position="Software Developer" />
@@ -61,13 +55,16 @@ export function TeamCard({ children }: { children: ReactNode }) {
   return <article className="flex flex-col gap-4">{children}</article>;
 }
 
-export function TeamCardImage({ src, alt }: { src: string; alt: string }) {
+export function TeamCardImage({ src, alt }: { src?: string; alt: string }) {
   return (
     <img
-      src={src}
+      src={
+        src ??
+        "https://www.paintersplace.ca/cdn/shop/products/444A50_1024x.png?v=1608659013"
+      }
       width={208}
       height={208}
-      className="mx-auto h-52 w-52 rounded-full object-cover"
+      className="mx-auto h-52 w-52 rounded-full border object-cover"
       alt={alt}
     />
   );
