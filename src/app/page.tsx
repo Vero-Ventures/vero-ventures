@@ -1,46 +1,23 @@
-"use client";
+import { HeroDescription, HeroSection, HeroTitle } from "@/components/hero";
+import { ClientSection } from "@/components/client-section";
+import { OurWorkSection } from "@/components/projects";
+import { AboutUsSection } from "@/components/about";
+import { ContactUsSection } from "@/components/contact-us";
 
-import { useEffect, useState } from "react";
-import Navigation from "@/components/navigation";
-import Hero from "@/components/header";
-import Features from "@/components/features";
-import About from "@/components/about";
-import Services from "@/components/services";
-import Gallery from "@/components/gallery";
-import Testimonials from "@/components/testimonials";
-import Team from "@/components/team";
-import Contact from "@/components/contact";
-import Footer from "@/components/footer";
-import { websiteData, type WebsiteData } from "@/data";
-
-export default function VeroVentures() {
-  const [landingPageData, setLandingPageData] = useState<WebsiteData | null>(
-    null
-  );
-  useEffect(() => {
-    setLandingPageData(websiteData);
-  }, []);
-
+export default function LandingPage() {
   return (
-    <>
-      <Navigation />
-      <main>
-        {landingPageData ? (
-          <>
-            <Hero data={landingPageData.hero} />
-            <Features data={landingPageData.features} />
-            <About data={landingPageData.about} />
-            <Services data={landingPageData.services} />
-            <Gallery data={landingPageData.gallery} />
-            <Testimonials data={landingPageData.testimonials} />
-            <Team data={landingPageData.team} />
-            <Contact data={landingPageData.contact} />
-          </>
-        ) : (
-          <div>Loading...</div>
-        )}
-      </main>
-      <Footer />
-    </>
+    <main>
+      <HeroSection>
+        <HeroTitle>Innovative Software Solutions for Your Business</HeroTitle>
+        <HeroDescription>
+          We transform your ideas into powerful, scalable software. Let's build
+          the future together.
+        </HeroDescription>
+      </HeroSection>
+      <ClientSection />
+      <OurWorkSection />
+      <AboutUsSection />
+      <ContactUsSection />
+    </main>
   );
 }
