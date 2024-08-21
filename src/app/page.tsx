@@ -3,6 +3,7 @@ import { ClientSection } from "@/components/client-section";
 import { OurWorkSection } from "@/components/projects";
 import { AboutUsSection } from "@/components/about";
 import { ContactUsSection } from "@/components/contact-us";
+import { OurServicesSection } from "@/components/services";
 
 export default function LandingPage() {
   return (
@@ -10,6 +11,7 @@ export default function LandingPage() {
       <HeroSection />
       <ClientSection />
       <OurWorkSection />
+      <OurServicesSection />
       <AboutUsSection />
       <ContactUsSection />
     </main>
