@@ -6,7 +6,9 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write . --list-different",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.0",
