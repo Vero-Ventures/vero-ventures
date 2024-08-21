@@ -7,13 +7,7 @@ import { ContactUsSection } from "@/components/contact-us";
 export default function LandingPage() {
   return (
     <main>
-      <HeroSection>
-        <HeroTitle>Innovative Software Solutions for Your Business</HeroTitle>
-        <HeroDescription>
-          We transform your ideas into powerful, scalable software. Let's build
-          the future together.
-        </HeroDescription>
-      </HeroSection>
+      <HeroSection />
       <ClientSection />
       <OurWorkSection />
       <AboutUsSection />

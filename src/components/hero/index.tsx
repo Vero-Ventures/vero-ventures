@@ -1,9 +1,15 @@
 import type { ReactNode } from "react";
 
-export function HeroSection({ children }: { children: ReactNode }) {
+export function HeroSection() {
   return (
     <section className="mt-20 p-8">
-      <div className="mx-auto max-w-screen-xl">{children}</div>
+      <div className="mx-auto max-w-screen-xl">
+        <HeroTitle>Innovative Software Solutions for Your Business</HeroTitle>
+        <HeroDescription>
+          We transform your ideas into powerful, scalable software. Let's build
+          the future together.
+        </HeroDescription>
+      </div>
     </section>
   );
 }
