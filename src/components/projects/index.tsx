@@ -21,7 +21,7 @@ export function OurWorkSection() {
               <ProjectTitle>Dynamic Needs Analysis</ProjectTitle>
               <ProjectDescription>
                 Comprehensive tool designed to optimize life insurance solutions
-                for your clients.
+                for your clients
               </ProjectDescription>
               <ProjectLinkButton href="https://www.dynamicneedsanalysis.com/" />
             </ProjectContent>
@@ -59,11 +59,7 @@ function ProjectContent({ children }: { children: ReactNode }) {
 }
 
 function ProjectTitle({ children }: { children: ReactNode }) {
-  return (
-    <h3 className="max-w-xs text-2xl font-semibold tracking-tighter">
-      {children}
-    </h3>
-  );
+  return <h3 className="max-w-xs text-xl font-semibold">{children}</h3>;
 }
 function ProjectDescription({ children }: { children: ReactNode }) {
   return (
@@ -76,7 +72,9 @@ function ProjectDescription({ children }: { children: ReactNode }) {
 function ProjectLinkButton({ href }: { href: string }) {
   return (
     <Button asChild>
-      <a href={href}>Live Preview</a>
+      <a href={href} target="_blank">
+        Live Preview
+      </a>
     </Button>
   );
 }
