@@ -15,7 +15,7 @@ export function OurWorkSection() {
           <ProjectCard>
             <ProjectImage
               src="/projects/dynamic-needs-analysis.png"
-              alt="Dynamic Needs Analysis"
+              alt="Dynamic Needs Analysis Web App"
             />
             <ProjectContent>
               <ProjectTitle>Dynamic Needs Analysis</ProjectTitle>
@@ -35,10 +35,7 @@ export function OurWorkSection() {
               </ProjectDescription>
               <ProjectLinkButton href="https://www.clasibot.com/" />
             </ProjectContent>
-            <ProjectImage
-              src="/projects/dynamic-needs-analysis.png"
-              alt="Dynamic Needs Analysis"
-            />
+            <ProjectImage src="/projects/clasibot.png" alt="Clasibot Web App" />
           </ProjectCard>
         </div>
       </div>
