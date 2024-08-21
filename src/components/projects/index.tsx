@@ -15,8 +15,15 @@ export function OurWorkSection() {
             <ProjectContent>
               <ProjectTitle>Dynamic Needs Analysis</ProjectTitle>
               <ProjectDescription>
+                <p>
+                  The comprehensive tool designed to optimize life insurance
+                  solutions for your clients.
+                </p>
                 <p className="leading-relaxed">
-                  The Ultimate Insurance Calculator for Professionals
+                  Tailored for industry professionals, our platform offers
+                  precise coverage analysis, customizable inputs, and advanced
+                  client management features, ensuring your clients receive the
+                  ideal coverage every time.
                 </p>
               </ProjectDescription>
               <ProjectLinkButton href="https://www.dynamicneedsanalysis.com/" />
@@ -34,10 +41,16 @@ export function OurWorkSection() {
           </ProjectCard>
           <ProjectCard>
             <ProjectContent>
-              <ProjectTitle>Accubot</ProjectTitle>
+              <ProjectTitle>Clasibot</ProjectTitle>
               <ProjectDescription>
                 <p className="leading-relaxed">
-                  The Ultimate Insurance Calculator for Professionals
+                  An AI-powered transaction classification tool designed to
+                  simplify bookkeeping
+                </p>
+                <p className="leading-relaxed">
+                  By integrating machine learning with API access to QuickBooks,
+                  Clasibot automates the categorization process, saving time for
+                  businesses.
                 </p>
               </ProjectDescription>
               <ProjectLinkButton href="https://www.dynamicneedsanalysis.com/" />
@@ -74,7 +87,9 @@ function ProjectTitle({ children }: { children: ReactNode }) {
 }
 function ProjectDescription({ children }: { children: ReactNode }) {
   return (
-    <div className="max-w-xs text-sm text-muted-foreground">{children}</div>
+    <div className="max-w-xs space-y-4 text-sm text-muted-foreground">
+      {children}
+    </div>
   );
 }
 

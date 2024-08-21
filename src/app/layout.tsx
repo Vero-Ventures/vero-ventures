@@ -29,7 +29,7 @@ export default function RootLayout({
 
 function Footer() {
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="">
       <div className="flex items-center justify-center p-8">
         ©{new Date().getFullYear()} Vero Ventures
       </div>
