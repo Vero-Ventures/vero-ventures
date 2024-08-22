@@ -3,21 +3,18 @@
 import { motion } from "framer-motion";
 
 import type { ReactNode } from "react";
-import { HeroHighlight, Highlight } from "../ui/hero-highlight";
 import { GradualSpacing } from "../ui/gradual-spacing";
 
 export function HeroSection() {
   return (
-    <section>
-      <HeroHighlight className="mx-auto mt-10 max-w-screen-xl">
+    <section className="my-36 p-8">
+      <div className="mx-auto max-w-screen-xl">
         <HeroTitle text="Innovative Software Solutions for Your Business" />
         <HeroDescription>
-          <Highlight>
-            We transform your ideas into powerful, scalable software. Let&apos;s
-            build the future together.
-          </Highlight>
+          We transform your ideas into powerful, scalable software. Let&apos;s
+          build the future together.
         </HeroDescription>
-      </HeroHighlight>
+      </div>
     </section>
   );
 }
@@ -46,7 +43,7 @@ export function HeroDescription({ children }: { children: ReactNode }) {
         duration: 0.5,
         ease: [0.4, 0.0, 0.2, 1],
       }}
-      className="text-md relative mx-auto mb-20 max-w-3xl text-center font-semibold text-muted-foreground"
+      className="text-md relative mx-auto max-w-3xl text-center font-semibold text-muted-foreground"
     >
       {children}
     </motion.p>
