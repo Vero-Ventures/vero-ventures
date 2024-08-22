@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function AboutUsSection() {
   return (
     <section
@@ -6,7 +8,7 @@ export function AboutUsSection() {
     >
       <div className="max-w-screen-xl px-8 xl:mx-auto">
         <h2 className="text-4xl font-bold">About Us</h2>
-        <p className="my-4 max-w-xl leading-relaxed text-slate-600">
+        <p className="my-4 w-[576px] leading-relaxed text-slate-600">
           At Vero Ventures, we believe in the power of technology to transform
           businesses. Founded with a mission to deliver exceptional digital
           solutions, we are passionate about helping companies leverage
@@ -14,7 +16,9 @@ export function AboutUsSection() {
           innovative, high-quality software that drives results.
         </p>
       </div>
-      <img
+      <Image
+        width={600}
+        height={600}
         className="w-full shadow-inner xl:max-w-screen-lg"
         src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="Picture of people working together in an office"
