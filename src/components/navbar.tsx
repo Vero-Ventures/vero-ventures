@@ -8,7 +8,6 @@ export default function Navbar() {
         <NavLink href="#work">Work</NavLink>
         <NavLink href="#services">Services</NavLink>
         <NavLink href="#aboutUs">About Us</NavLink>
-        <NavLink href="#team">Team</NavLink>
       </nav>
       <div />
     </header>

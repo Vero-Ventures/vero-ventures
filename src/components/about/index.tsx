@@ -1,86 +1,24 @@
-import type { ReactNode } from "react";
-
 export function AboutUsSection() {
   return (
-    <section id="aboutUs" className="border-b bg-secondary">
-      <div className="mx-auto max-w-screen-xl px-8 pt-20">
+    <section
+      id="aboutUs"
+      className="flex flex-col gap-4 bg-secondary py-20 xl:flex-row xl:items-center xl:py-0"
+    >
+      <div className="max-w-screen-xl px-8 xl:mx-auto">
         <h2 className="text-4xl font-bold">About Us</h2>
-        <p className="my-4 mb-20 max-w-xl leading-relaxed text-muted-foreground">
+        <p className="my-4 max-w-xl leading-relaxed text-slate-600">
           At Vero Ventures, we believe in the power of technology to transform
           businesses. Founded with a mission to deliver exceptional digital
           solutions, we are passionate about helping companies leverage
           technology for growth. Our team of experts is committed to creating
           innovative, high-quality software that drives results.
         </p>
-        {/* <div id="team" className="py-10">
-          <h2 className="text-4xl font-bold">Meet the Team</h2>
-          <div className="grid gap-10 pt-20 md:grid-cols-3">
-            <TeamCard>
-              <TeamCardImage
-                src="https://github.com/ynvtlmr.png"
-                alt="placeholder"
-              />
-              <TeamMember name="Yaniv Talmor" position="CEO" />
-            </TeamCard>
-            <TeamCard>
-              <TeamCardImage alt="placeholder" />
-              <TeamMember name="Dev Dhillon" position="Marketing Specialist" />
-            </TeamCard>
-            <TeamCard>
-              <TeamCardImage alt="placeholder" />
-              <TeamMember name="Braden Rogers" position="Software Developer" />
-            </TeamCard>
-            <TeamCard>
-              <TeamCardImage
-                src="https://github.com/scottchen98.png"
-                alt="placeholder"
-              />
-              <TeamMember name="Scott Chen" position="Software Developer" />
-            </TeamCard>
-            <TeamCard>
-              <TeamCardImage
-                src="https://media.licdn.com/dms/image/v2/D5603AQGxDovhPB4UZw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1702798993128?e=1729728000&v=beta&t=DZSd1O0_AeMgLR4w-HiqSaA8d7bAZQvUgBm_I0MQa3s"
-                alt="placeholder"
-              />
-              <TeamMember name="Michael Lei" position="Software Developer" />
-            </TeamCard>
-          </div>
-        </div> */}
       </div>
+      <img
+        className="w-full shadow-inner xl:max-w-screen-lg"
+        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Picture of people working together in an office"
+      />
     </section>
-  );
-}
-
-export function TeamCard({ children }: { children: ReactNode }) {
-  return <article className="flex flex-col gap-4">{children}</article>;
-}
-
-export function TeamCardImage({ src, alt }: { src?: string; alt: string }) {
-  return (
-    <img
-      src={
-        src ??
-        "https://www.paintersplace.ca/cdn/shop/products/444A50_1024x.png?v=1608659013"
-      }
-      width={208}
-      height={208}
-      className="mx-auto h-52 w-52 rounded-full border object-cover"
-      alt={alt}
-    />
-  );
-}
-
-export function TeamMember({
-  name,
-  position,
-}: {
-  name: string;
-  position: string;
-}) {
-  return (
-    <div className="space-y-4 text-center">
-      <h3 className="text-2xl font-bold">{name}</h3>
-      <p className="text-sm leading-6 text-muted-foreground">{position}</p>
-    </div>
   );
 }
