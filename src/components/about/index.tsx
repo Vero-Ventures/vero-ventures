@@ -2,8 +2,8 @@ import type { ReactNode } from "react";
 
 export function AboutUsSection() {
   return (
-    <section id="aboutUs" className="border-y bg-secondary">
-      <div className="mx-auto mt-20 max-w-screen-xl p-8">
+    <section id="aboutUs" className="border-b bg-secondary">
+      <div className="mx-auto max-w-screen-xl px-8 pt-20">
         <h2 className="text-4xl font-bold">About Us</h2>
         <p className="my-4 mb-20 max-w-xl leading-relaxed text-muted-foreground">
           At Vero Ventures, we believe in the power of technology to transform
