@@ -4,6 +4,7 @@ import { OurWorkSection } from "@/components/projects";
 import { AboutUsSection } from "@/components/about";
 import { ContactUsSection } from "@/components/contact-us";
 import { OurServicesSection } from "@/components/services";
+import { TechnologiesSection } from "@/components/technologies";
 
 export default function LandingPage() {
   return (
@@ -12,6 +13,7 @@ export default function LandingPage() {
       <ClientSection />
       <OurWorkSection />
       <OurServicesSection />
+      <TechnologiesSection />
       <AboutUsSection />
       <ContactUsSection />
     </main>

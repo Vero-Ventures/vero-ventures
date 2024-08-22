@@ -2,8 +2,8 @@ import type { ReactNode } from "react";
 
 export function AboutUsSection() {
   return (
-    <section id="aboutUs" className="border-y bg-secondary">
-      <div className="mx-auto mt-20 max-w-screen-xl p-8">
+    <section id="aboutUs" className="border-b bg-secondary">
+      <div className="mx-auto max-w-screen-xl px-8 pt-20">
         <h2 className="text-4xl font-bold">About Us</h2>
         <p className="my-4 mb-20 max-w-xl leading-relaxed text-muted-foreground">
           At Vero Ventures, we believe in the power of technology to transform
@@ -12,7 +12,7 @@ export function AboutUsSection() {
           technology for growth. Our team of experts is committed to creating
           innovative, high-quality software that drives results.
         </p>
-        <div id="team" className="py-10">
+        {/* <div id="team" className="py-10">
           <h2 className="text-4xl font-bold">Meet the Team</h2>
           <div className="grid gap-10 pt-20 md:grid-cols-3">
             <TeamCard>
@@ -45,7 +45,7 @@ export function AboutUsSection() {
               <TeamMember name="Michael Lei" position="Software Developer" />
             </TeamCard>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

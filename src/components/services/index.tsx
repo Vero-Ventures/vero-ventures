@@ -9,7 +9,7 @@ export function OurServicesSection() {
   return (
     <section
       id="services"
-      className="mx-auto max-w-screen-2xl space-y-20 border-y pb-28 pt-8"
+      className="mx-auto max-w-screen-2xl space-y-20 border-b pb-28 pt-8"
     >
       <div className="mx-auto mt-10 max-w-3xl">
         <h2 className="text-center text-4xl font-bold">Our Services</h2>
