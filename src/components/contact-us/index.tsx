@@ -8,7 +8,11 @@ export function ContactUsSection() {
         <p className="mb-8 mt-2 text-lg">
           Get in touch with us for any inquiries or project discussions.
         </p>
-        <Button variant="secondary">Book Appointment</Button>
+        <Button variant="secondary" asChild>
+          <a href="https://calendly.com/yanivt" target="_blank">
+            Book Appointment
+          </a>
+        </Button>
       </div>
     </section>
   );
