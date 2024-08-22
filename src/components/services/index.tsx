@@ -4,6 +4,7 @@ import {
   LightbulbIcon,
 } from "lucide-react";
 import type { ReactNode } from "react";
+import { CardSpotlight } from "../ui/card-spotlight";
 
 export function OurServicesSection() {
   return (
@@ -19,7 +20,10 @@ export function OurServicesSection() {
         </div>
 
         <div className="grid grid-cols-1 gap-7 px-8 md:grid-cols-2 lg:grid-cols-3">
-          <ServiceCard>
+          <CardSpotlight
+            className="flex max-w-lg flex-col gap-4 border border-slate-200 bg-background p-8 tracking-wide"
+            color="#A0DEFF"
+          >
             <PencilRulerIcon className="mb-3" width={36} height={36} />
             <ServiceHeader>Custom Software Development</ServiceHeader>
             <ServiceDescription>
@@ -28,8 +32,12 @@ export function OurServicesSection() {
               high-performance software that aligns with your goals and drives
               growth.
             </ServiceDescription>
-          </ServiceCard>
-          <ServiceCard>
+          </CardSpotlight>
+
+          <CardSpotlight
+            className="flex max-w-lg flex-col gap-4 border border-slate-200 bg-background p-8 tracking-wide"
+            color="#A0DEFF"
+          >
             <SquareTerminalIcon className="mb-3" width={36} height={36} />
             <ServiceHeader>
               Web and Mobile Application Development
@@ -39,8 +47,11 @@ export function OurServicesSection() {
               applications. We focus on delivering seamless digital experiences
               that enhance user engagement and satisfaction.
             </ServiceDescription>
-          </ServiceCard>
-          <ServiceCard>
+          </CardSpotlight>
+          <CardSpotlight
+            className="flex max-w-lg flex-col gap-4 border border-slate-200 bg-background p-8 tracking-wide"
+            color="#A0DEFF"
+          >
             <LightbulbIcon className="mb-3" width={36} height={36} />
             <ServiceHeader>Technology Consulting and Strategy</ServiceHeader>
             <ServiceDescription>
@@ -48,18 +59,10 @@ export function OurServicesSection() {
               and aligning your IT strategy with business goals. We help you
               make informed decisions that optimize efficiency and innovation.
             </ServiceDescription>
-          </ServiceCard>
+          </CardSpotlight>
         </div>
       </div>
     </section>
-  );
-}
-
-function ServiceCard({ children }: { children: ReactNode }) {
-  return (
-    <article className="flex max-w-lg flex-col gap-4 rounded-2xl border p-8 tracking-wide">
-      {children}
-    </article>
   );
 }
 
