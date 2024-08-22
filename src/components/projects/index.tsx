@@ -4,7 +4,7 @@ import { LinkPreview } from "../ui/link-preview";
 
 export function OurWorkSection() {
   return (
-    <section id="work" className="border-y">
+    <section id="work" className="border-b">
       <div className="mx-auto mt-10 p-8">
         <h2 className="text-center text-4xl font-bold">🚀 Our Work</h2>
         <p className="my-4 text-center text-muted-foreground">
