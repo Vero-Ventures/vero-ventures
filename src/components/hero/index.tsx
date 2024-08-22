@@ -6,8 +6,8 @@ export function HeroSection() {
       <div className="mx-auto max-w-screen-xl">
         <HeroTitle>Innovative Software Solutions for Your Business</HeroTitle>
         <HeroDescription>
-          We transform your ideas into powerful, scalable software. Let's build
-          the future together.
+          We transform your ideas into powerful, scalable software. Let&apos;s
+          build the future together.
         </HeroDescription>
       </div>
     </section>
