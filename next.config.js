@@ -11,6 +11,9 @@ const nextConfig = {
         pathname: "/wp-content/uploads/2021/09/Videre-300x100.png",
       },
     ],
+    domains: [
+      "api.microlink.io", // Microlink Image Preview
+    ],
   },
 };
 
