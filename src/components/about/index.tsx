@@ -12,7 +12,7 @@ export function AboutUsSection() {
           technology for growth. Our team of experts is committed to creating
           innovative, high-quality software that drives results.
         </p>
-        <div id="team" className="py-10">
+        {/* <div id="team" className="py-10">
           <h2 className="text-4xl font-bold">Meet the Team</h2>
           <div className="grid gap-10 pt-20 md:grid-cols-3">
             <TeamCard>
@@ -45,7 +45,7 @@ export function AboutUsSection() {
               <TeamMember name="Michael Lei" position="Software Developer" />
             </TeamCard>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
