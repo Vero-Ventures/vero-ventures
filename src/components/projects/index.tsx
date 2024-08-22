@@ -1,6 +1,8 @@
 import type { ReactNode } from "react";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import { LinkPreview } from "../ui/link-preview";
+import { cn } from "@/lib/utils";
 
 export function OurWorkSection() {
   return (
@@ -18,7 +20,13 @@ export function OurWorkSection() {
               alt="Dynamic Needs Analysis Web App"
             />
             <ProjectContent>
-              <ProjectTitle>Dynamic Needs Analysis</ProjectTitle>
+              <ProjectTitle>
+                <LinkPreview url="https://www.dynamicneedsanalysis.com/">
+                  <span className="bg-gradient-to-r from-blue-400 to-blue-900 bg-clip-text font-bold text-transparent">
+                    Dynamic Needs Analysis
+                  </span>
+                </LinkPreview>
+              </ProjectTitle>
               <ProjectDescription>
                 Comprehensive tool designed to optimize life insurance solutions
                 for your clients
@@ -28,7 +36,13 @@ export function OurWorkSection() {
           </ProjectCard>
           <ProjectCard>
             <ProjectContent>
-              <ProjectTitle>Clasibot</ProjectTitle>
+              <ProjectTitle>
+                <LinkPreview url="https://www.clasibot.com//">
+                  <span className="bg-gradient-to-r from-green-400 to-green-700 bg-clip-text font-bold text-transparent">
+                    Clasibot
+                  </span>
+                </LinkPreview>
+              </ProjectTitle>
               <ProjectDescription>
                 AI-powered transaction classification tool designed to simplify
                 bookkeeping

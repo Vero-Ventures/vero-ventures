@@ -16,7 +16,7 @@ export function HeroSection() {
 
 export function HeroTitle({ children }: { children: ReactNode }) {
   return (
-    <h1 className="mb-14 text-balance text-center text-4xl font-bold tracking-tighter md:text-7xl">
+    <h1 className="mb-14 text-balance bg-gradient-to-r from-slate-400 to-black bg-clip-text text-center text-4xl font-bold tracking-tighter text-transparent md:text-7xl">
       {children}
     </h1>
   );
