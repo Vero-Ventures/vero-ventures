@@ -25,7 +25,7 @@ export function OurServicesSection() {
           <PencilRulerIcon className="mb-3" width={36} height={36} />
           <ServiceHeader>Custom Software Development</ServiceHeader>
           <ServiceDescription>
-            Tailor-made software solutions designed to meet your business's
+            Tailor-made software solutions designed to meet your business&apos;s
             unique needs. We deliver scalable, high-performance software that
             aligns with your goals and drives growth.
           </ServiceDescription>
