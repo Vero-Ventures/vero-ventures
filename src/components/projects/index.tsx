@@ -1,8 +1,6 @@
 import type { ReactNode } from "react";
 import { Button } from "../ui/button";
-import Image from "next/image";
 import { LinkPreview } from "../ui/link-preview";
-import { cn } from "@/lib/utils";
 
 export function OurWorkSection() {
   return (
@@ -10,8 +8,8 @@ export function OurWorkSection() {
       <div className="mx-auto mt-10 p-8">
         <h2 className="text-center text-4xl font-bold">🚀 Our Work</h2>
         <p className="my-4 text-center text-muted-foreground">
-          A look at some of the amazing web / mobile applications that we've
-          built recently.
+          A look at some of the amazing web / mobile applications that
+          we&apos;ve built recently.
         </p>
         <div className="flex flex-col gap-20 py-20">
           <ProjectCard>

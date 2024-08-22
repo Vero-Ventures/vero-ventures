@@ -17,11 +17,11 @@ export function TechnologiesSection() {
       <div className="relative flex h-[18rem] flex-col items-center justify-center overflow-hidden antialiased">
         <InfiniteMovingLogos
           items={[
-            <ReactSvg />,
-            <TypeScriptSvg />,
-            <NextJsSvg />,
-            <OpenAiSvg />,
-            <ExpoSvg />,
+            <ReactSvg key={1} />,
+            <TypeScriptSvg key={2} />,
+            <NextJsSvg key={3} />,
+            <OpenAiSvg key={4} />,
+            <ExpoSvg key={5} />,
           ]}
           direction="right"
           speed="normal"
