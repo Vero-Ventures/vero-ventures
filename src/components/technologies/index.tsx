@@ -4,7 +4,7 @@ import { InfiniteMovingLogos } from "./infinite-moving-logos";
 
 export function TechnologiesSection() {
   return (
-    <section id="technology" className="border-b pt-8">
+    <section id="technology" className="pt-8">
       <div className="mx-auto mt-10 max-w-3xl">
         <h2 className="text-center text-4xl font-bold">Technologies Used</h2>
         <p className="my-4 text-center text-muted-foreground">
