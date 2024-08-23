@@ -5,6 +5,7 @@ import {
 } from "lucide-react";
 import type { ReactNode } from "react";
 import { CardSpotlight } from "../ui/card-spotlight";
+import { Grid } from "../ui/grid";
 
 export function OurServicesSection() {
   return (
@@ -21,9 +22,10 @@ export function OurServicesSection() {
 
         <div className="grid grid-cols-1 gap-7 px-8 md:grid-cols-2 lg:grid-cols-3">
           <CardSpotlight
-            className="flex max-w-lg flex-col gap-4 border border-slate-200 bg-background p-8 tracking-wide"
+            className="flex max-w-lg flex-col gap-4 overflow-hidden border border-slate-200 bg-background p-8 tracking-wide"
             color="#A0DEFF"
           >
+            <Grid size={50} />
             <PencilRulerIcon className="mb-3" width={36} height={36} />
             <ServiceHeader>Custom Software Development</ServiceHeader>
             <ServiceDescription>
@@ -35,9 +37,10 @@ export function OurServicesSection() {
           </CardSpotlight>
 
           <CardSpotlight
-            className="flex max-w-lg flex-col gap-4 border border-slate-200 bg-background p-8 tracking-wide"
+            className="flex max-w-lg flex-col gap-4 overflow-hidden border border-slate-200 bg-background p-8 tracking-wide"
             color="#A0DEFF"
           >
+            <Grid size={50} />
             <SquareTerminalIcon className="mb-3" width={36} height={36} />
             <ServiceHeader>
               Web and Mobile Application Development
@@ -49,9 +52,10 @@ export function OurServicesSection() {
             </ServiceDescription>
           </CardSpotlight>
           <CardSpotlight
-            className="flex max-w-lg flex-col gap-4 border border-slate-200 bg-background p-8 tracking-wide"
+            className="flex max-w-lg flex-col gap-4 overflow-hidden border border-slate-200 bg-background p-8 tracking-wide"
             color="#A0DEFF"
           >
+            <Grid size={50} />
             <LightbulbIcon className="mb-3" width={36} height={36} />
             <ServiceHeader>Technology Consulting and Strategy</ServiceHeader>
             <ServiceDescription>
