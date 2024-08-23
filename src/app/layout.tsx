@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "../../components/theme-provider";
+import ScrollTopButton from "@/components/scroll-button";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
+          <ScrollTopButton />
         </ThemeProvider>
       </body>
     </html>
