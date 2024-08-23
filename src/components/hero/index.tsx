@@ -7,7 +7,7 @@ import { GradualSpacing } from "../ui/gradual-spacing";
 
 export function HeroSection() {
   return (
-    <section className="my-36 p-8">
+    <section className="bg-gradient-to-tr from-primary to-muted-foreground p-8 py-36 text-primary-foreground dark:bg-gradient-to-tr dark:from-background dark:text-foreground">
       <div className="mx-auto max-w-screen-xl">
         <HeroTitle text="Innovative Software Solutions for Your Business" />
         <HeroDescription>
@@ -43,7 +43,7 @@ export function HeroDescription({ children }: { children: ReactNode }) {
         duration: 0.5,
         ease: [0.4, 0.0, 0.2, 1],
       }}
-      className="text-md relative mx-auto max-w-3xl text-center font-semibold text-muted-foreground"
+      className="text-md relative mx-auto max-w-3xl text-center font-semibold text-primary-foreground/80 dark:text-slate-300"
     >
       {children}
     </motion.p>

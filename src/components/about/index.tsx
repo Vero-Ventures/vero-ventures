@@ -8,7 +8,7 @@ export function AboutUsSection() {
     >
       <div className="max-w-screen-xl px-8 xl:mx-auto">
         <h2 className="text-4xl font-bold">About Us</h2>
-        <p className="my-4 w-[576px] leading-relaxed text-slate-600">
+        <p className="my-4 w-[576px] leading-relaxed text-slate-600 dark:text-slate-200">
           At Vero Ventures, we believe in the power of technology to transform
           businesses. Founded with a mission to deliver exceptional digital
           solutions, we are passionate about helping companies leverage
