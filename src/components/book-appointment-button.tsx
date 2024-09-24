@@ -8,9 +8,7 @@ export default function BookAppointmentButton(
 ) {
   return (
     <Button size="lg" asChild {...props}>
-      <a href="https://calendly.com/yanivt" target="_blank">
-        Book Appointment
-      </a>
+      <a href="#calendly">Book Appointment</a>
     </Button>
   );
 }

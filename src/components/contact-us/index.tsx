@@ -1,4 +1,4 @@
-import BookAppointmentButton from "../book-appointment-button";
+import CalendlyEmbed from "../../../components/calendly-embed";
 
 export function ContactUsSection() {
   return (
@@ -10,7 +10,7 @@ export function ContactUsSection() {
         <p className="mb-8 mt-2 text-lg">
           Get in touch with us for any inquiries or project discussions.
         </p>
-        <BookAppointmentButton variant="secondary" />
+        <CalendlyEmbed url="https://calendly.com/veroventures" />
       </div>
     </section>
   );
