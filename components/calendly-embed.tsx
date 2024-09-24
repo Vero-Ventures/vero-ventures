@@ -5,7 +5,7 @@ export default function CalendlyEmbed({ url }: { url: string }) {
     <>
       <div
         id="calendly"
-        className="calendly-inline-widget mx-auto h-[350px] max-w-96"
+        className="calendly-inline-widget m-0 h-[660px] p-0"
         data-url={url}
       ></div>
       <Script src="https://assets.calendly.com/assets/external/widget.js" />
