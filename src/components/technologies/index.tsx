@@ -9,7 +9,7 @@ export function TechnologiesSection() {
       className="pt-8 dark:bg-gradient-to-br dark:from-slate-500 dark:to-muted"
     >
       <div className="mx-auto mt-10 max-w-3xl">
-        <h2 className="text-center text-4xl font-bold text-foreground dark:text-slate-50">
+        <h2 className="text-center text-4xl font-bold tracking-tighter text-foreground dark:text-slate-50">
           Technologies Used
         </h2>
         <p className="my-4 text-center text-muted-foreground dark:text-slate-100">

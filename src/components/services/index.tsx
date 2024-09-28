@@ -12,7 +12,9 @@ export function OurServicesSection() {
     <section id="services" className="pb-28 pt-8">
       <div className="mx-auto max-w-screen-2xl space-y-20">
         <div className="mx-auto mt-10 max-w-3xl">
-          <h2 className="text-center text-4xl font-bold">Our Services</h2>
+          <h2 className="text-center text-4xl font-bold tracking-tighter">
+            Our Services
+          </h2>
           <p className="my-4 text-center text-muted-foreground">
             We offer custom software development, web and mobile application
             creation, and technology consulting to help businesses innovate,
