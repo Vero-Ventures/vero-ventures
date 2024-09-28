@@ -12,10 +12,8 @@ export function HeroSection() {
       <div className="mx-auto max-w-7xl">
         <HeroTitle text="Turn your ideas into reality" />
         <HeroDescription>
-          We partner with visionaries to transform their startup ideas into
-          successful businesses. With expert guidance and a tailored approach,
-          we&apos;re here to help you every step of the way—from concept to
-          launch. Let&apos;s bring your vision to life!
+          We partner with visionaries to transform ideas into successful
+          businesses, offering expert guidance from concept to launch.
         </HeroDescription>
         <div className="mt-10 flex justify-center">
           <BookAppointmentButton />
@@ -28,7 +26,7 @@ export function HeroSection() {
 export function HeroTitle({ text }: { text: string }) {
   return (
     <GradualSpacing
-      className="mb-2 text-balance text-7xl font-bold tracking-tight"
+      className="mb-2 text-balance text-center text-7xl font-bold tracking-tight"
       text={text}
     />
   );
@@ -49,7 +47,7 @@ export function HeroDescription({ children }: { children: ReactNode }) {
         duration: 0.5,
         ease: [0.4, 0.0, 0.2, 1],
       }}
-      className="relative mx-auto max-w-xl pt-8 text-center text-muted-foreground"
+      className="relative mx-auto max-w-2xl pt-8 text-center text-xl"
     >
       {children}
     </motion.p>

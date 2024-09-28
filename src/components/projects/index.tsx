@@ -6,12 +6,9 @@ export function OurWorkSection() {
   return (
     <section id="work">
       <div className="mx-auto mt-10 p-8">
-        <h2 className="text-center text-4xl font-bold tracking-tighter">
-          Our Work
-        </h2>
-        <p className="my-4 text-center text-muted-foreground">
-          A look at some of the amazing web / mobile applications that
-          we&apos;ve built recently.
+        <h2 className="text-center text-4xl font-bold">Our Work</h2>
+        <p className="my-4 text-center text-xl">
+          Amazing web / mobile applications that we&apos;ve built recently.
         </p>
         <div className="mt-10 space-y-20 rounded-lg bg-muted py-20">
           <ProjectCard>

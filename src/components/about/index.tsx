@@ -7,8 +7,8 @@ export function AboutUsSection() {
       className="flex flex-col gap-4 bg-muted py-20 xl:flex-row xl:items-center xl:py-0"
     >
       <div className="max-w-screen-xl px-8 xl:mx-auto">
-        <h2 className="text-4xl font-bold tracking-tighter">About Us</h2>
-        <p className="my-4 w-full max-w-[576px] leading-relaxed text-muted-foreground">
+        <h2 className="text-4xl font-bold">About Us</h2>
+        <p className="my-4 w-full max-w-xl text-xl leading-relaxed">
           At Vero Ventures, we believe in the power of technology to transform
           businesses. Founded with a mission to deliver exceptional digital
           solutions, we are passionate about helping companies leverage
