@@ -13,7 +13,7 @@ export function OurServicesSection() {
       <div className="mx-auto max-w-screen-2xl space-y-20">
         <div className="mx-auto mt-10 max-w-3xl">
           <h2 className="text-center text-4xl font-bold">Our Services</h2>
-          <p className="my-4 text-center text-muted-foreground">
+          <p className="my-4 text-center text-xl">
             We offer custom software development, web and mobile application
             creation, and technology consulting to help businesses innovate,
             grow, and succeed in the digital landscape.
@@ -22,7 +22,7 @@ export function OurServicesSection() {
 
         <div className="grid grid-cols-1 gap-7 px-8 md:grid-cols-2 lg:grid-cols-3">
           <CardSpotlight
-            className="flex max-w-lg flex-col gap-4 overflow-hidden border border-slate-200 bg-background p-8 tracking-wide"
+            className="flex max-w-lg flex-col gap-4 overflow-hidden border border-slate-200 bg-background p-8"
             color="#A0DEFF"
           >
             <Grid size={50} />
@@ -37,7 +37,7 @@ export function OurServicesSection() {
           </CardSpotlight>
 
           <CardSpotlight
-            className="flex max-w-lg flex-col gap-4 overflow-hidden border border-slate-200 bg-background p-8 tracking-wide"
+            className="flex max-w-lg flex-col gap-4 overflow-hidden border border-slate-200 bg-background p-8"
             color="#A0DEFF"
           >
             <Grid size={50} />
@@ -52,7 +52,7 @@ export function OurServicesSection() {
             </ServiceDescription>
           </CardSpotlight>
           <CardSpotlight
-            className="flex max-w-lg flex-col gap-4 overflow-hidden border border-slate-200 bg-background p-8 tracking-wide"
+            className="flex max-w-lg flex-col gap-4 overflow-hidden border border-slate-200 bg-background p-8"
             color="#A0DEFF"
           >
             <Grid size={50} />

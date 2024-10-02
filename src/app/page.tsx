@@ -10,8 +10,8 @@ export default function LandingPage() {
     <main>
       <HeroSection />
       <OurWorkSection />
-      <TechnologiesSection />
       <OurServicesSection />
+      <TechnologiesSection />
       <AboutUsSection />
       <ContactUsSection />
     </main>

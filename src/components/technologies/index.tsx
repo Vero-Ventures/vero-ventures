@@ -12,7 +12,7 @@ export function TechnologiesSection() {
         <h2 className="text-center text-4xl font-bold text-foreground dark:text-slate-50">
           Technologies Used
         </h2>
-        <p className="my-4 text-center text-muted-foreground dark:text-slate-100">
+        <p className="my-4 text-center text-xl">
           Our team leverages the latest technologies and frameworks, including
           React, TypeScript, Next.JS, and more, to deliver cutting-edge software
           solutions tailored to your needs.

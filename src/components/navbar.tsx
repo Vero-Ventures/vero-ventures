@@ -1,25 +1,19 @@
+import { Lightbulb } from "lucide-react";
 import type { ReactNode } from "react";
-import { ModeToggle } from "../../components/mode-toggle";
-import { cn } from "@/lib/utils";
-import { Space_Grotesk } from "next/font/google";
-
-const lora = Space_Grotesk({ subsets: ["latin"] });
 
 export default function Navbar() {
   return (
-    <header className="drop-shadow-xl">
+    <header>
       <div className="mx-auto flex max-w-screen-xl flex-row items-center gap-4 p-8 md:justify-between">
-        <div className={cn(lora.className, "text-2xl font-bold")}>
-          Vero Ventures
+        <div className="rounded-full bg-primary p-2 text-xl font-bold text-primary-foreground">
+          <Lightbulb />
         </div>
-        <nav className="hidden flex-1 flex-row items-center justify-center space-x-14 text-sm md:flex">
+        <div className="text-2xl font-bold">Vero Ventures</div>
+        <nav className="hidden flex-1 flex-row items-center justify-center space-x-14 md:flex">
           <NavLink href="#work">Work</NavLink>
           <NavLink href="#services">Services</NavLink>
           <NavLink href="#aboutUs">About Us</NavLink>
         </nav>
-        <div>
-          <ModeToggle />
-        </div>
       </div>
     </header>
   );

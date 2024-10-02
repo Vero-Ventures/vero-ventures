@@ -6,12 +6,11 @@ export function OurWorkSection() {
   return (
     <section id="work">
       <div className="mx-auto mt-10 p-8">
-        <h2 className="text-center text-4xl font-bold">🚀 Our Work</h2>
-        <p className="my-4 text-center text-muted-foreground">
-          A look at some of the amazing web / mobile applications that
-          we&apos;ve built recently.
+        <h2 className="text-center text-4xl font-bold">Our Work</h2>
+        <p className="my-4 text-center text-xl">
+          Amazing web / mobile applications that we&apos;ve built recently.
         </p>
-        <div className="flex flex-col gap-20 py-20">
+        <div className="mt-10 space-y-20 rounded-lg bg-muted py-20">
           <ProjectCard>
             <ProjectImage
               src="/projects/dynamic-needs-analysis.png"
@@ -20,34 +19,34 @@ export function OurWorkSection() {
             <ProjectContent>
               <ProjectTitle>
                 <LinkPreview url="https://www.dynamicneedsanalysis.com/">
-                  <span className="bg-gradient-to-r from-blue-400 to-blue-900 bg-clip-text font-bold text-transparent">
-                    Dynamic Needs Analysis
-                  </span>
+                  Dynamic Needs Analysis
                 </LinkPreview>
               </ProjectTitle>
               <ProjectDescription>
                 Comprehensive tool designed to optimize life insurance solutions
                 for your clients
               </ProjectDescription>
-              <ProjectLinkButton href="https://www.dynamicneedsanalysis.com/" />
+              <div className="flex justify-center">
+                <ProjectLinkButton href="https://www.dynamicneedsanalysis.com/" />
+              </div>
             </ProjectContent>
           </ProjectCard>
           <ProjectCard>
+            <ProjectImage src="/projects/clasibot.png" alt="Clasibot Web App" />
             <ProjectContent>
               <ProjectTitle>
                 <LinkPreview url="https://www.clasibot.com//">
-                  <span className="bg-gradient-to-r from-green-400 to-green-700 bg-clip-text font-bold text-transparent">
-                    Clasibot
-                  </span>
+                  Clasibot
                 </LinkPreview>
               </ProjectTitle>
               <ProjectDescription>
                 AI-powered transaction classification tool designed to simplify
                 bookkeeping
               </ProjectDescription>
-              <ProjectLinkButton href="https://www.clasibot.com/" />
+              <div className="flex justify-center">
+                <ProjectLinkButton href="https://www.clasibot.com/" />
+              </div>
             </ProjectContent>
-            <ProjectImage src="/projects/clasibot.png" alt="Clasibot Web App" />
           </ProjectCard>
         </div>
       </div>
@@ -56,23 +55,19 @@ export function OurWorkSection() {
 }
 
 function ProjectCard({ children }: { children: ReactNode }) {
-  return (
-    <article className="flex flex-col justify-evenly gap-6 px-4 md:flex-row">
-      {children}
-    </article>
-  );
+  return <article className="mx-auto max-w-7xl px-4">{children}</article>;
 }
 
 function ProjectContent({ children }: { children: ReactNode }) {
-  return <div className="mt-10 space-y-4">{children}</div>;
+  return <div className="mt-10 space-y-4 pl-10">{children}</div>;
 }
 
 function ProjectTitle({ children }: { children: ReactNode }) {
-  return <h3 className="max-w-xs text-xl font-semibold">{children}</h3>;
+  return <h3 className="text-center text-4xl font-bold">{children}</h3>;
 }
 function ProjectDescription({ children }: { children: ReactNode }) {
   return (
-    <p className="max-w-2xl text-balance text-4xl font-bold leading-relaxed">
+    <p className="mx-auto max-w-4xl text-balance text-center text-xl leading-relaxed">
       {children}
     </p>
   );
@@ -80,7 +75,7 @@ function ProjectDescription({ children }: { children: ReactNode }) {
 
 function ProjectLinkButton({ href }: { href: string }) {
   return (
-    <Button asChild>
+    <Button className="rounded-full" size="lg" asChild>
       <a href={href} target="_blank">
         Live Preview
       </a>
@@ -91,7 +86,7 @@ function ProjectLinkButton({ href }: { href: string }) {
 function ProjectImage({ src, alt }: { src: string; alt: string }) {
   return (
     <div>
-      <img src={src} alt={alt} className="w-full max-w-screen-lg" />
+      <img src={src} alt={alt} className="w-full" />
     </div>
   );
 }

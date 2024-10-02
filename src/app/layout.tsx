@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/navbar";
-import { ThemeProvider } from "../../components/theme-provider";
 import ScrollTopButton from "@/components/scroll-button";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,19 +18,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth bg-primary">
+    <html lang="en" className="light scroll-smooth">
       <body className={cn(inter.className, "min-h-dvh antialiased")}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Navbar />
-          {children}
-          <Footer />
-          <ScrollTopButton />
-        </ThemeProvider>
+        <Navbar />
+        {children}
+        <Footer />
+        <ScrollTopButton />
       </body>
     </html>
   );
