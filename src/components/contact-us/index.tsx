@@ -11,7 +11,7 @@ export function ContactUsSection() {
           Get in touch with us for any inquiries or project discussions.
         </p>
       </div>
-      <CalendlyEmbed url="https://calendly.com/veroventures/30min" />
+      <CalendlyEmbed url="https://calendly.com/veroventures/chat" />
     </section>
   );
 }
