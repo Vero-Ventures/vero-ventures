@@ -100,24 +100,6 @@ export function AboutUsSection() {
                 adaptability to every project I take on.
               </p>
             </div>
-
-            <div className="mt-10 grid grid-cols-2 gap-4 border-t border-hairline pt-8">
-              {[
-                { label: "Background", value: "AI / ML · Full-Stack" },
-                { label: "Education", value: "Georgia Tech M.S." },
-                { label: "Builds", value: "Web · Mobile · AI" },
-                { label: "Code ownership", value: "100% yours, always" },
-              ].map((item) => (
-                <div key={item.label}>
-                  <p className="font-mono text-[9px] uppercase tracking-[0.15em] text-ink-muted">
-                    {item.label}
-                  </p>
-                  <p className="mt-1 font-mono text-[11px] text-ink">
-                    {item.value}
-                  </p>
-                </div>
-              ))}
-            </div>
           </motion.div>
         </div>
       </div>

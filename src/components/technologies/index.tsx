@@ -29,7 +29,7 @@ export function TechnologiesSection() {
         />
       </div>
 
-      <div className="mx-auto mt-6 max-w-7xl px-8">
+      <div className="mt-6 px-8 text-center">
         <p className="font-mono text-xs text-ink-muted">
           React · TypeScript · Next.js · OpenAI · Expo · Postgres · Supabase ·
           Vercel · Stripe
