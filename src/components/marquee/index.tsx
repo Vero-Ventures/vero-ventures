@@ -16,10 +16,7 @@ export function MarqueeRibbon({ className }: { className?: string }) {
 
   return (
     <div
-      className={cn(
-        "overflow-hidden bg-vermilion py-3.5",
-        className
-      )}
+      className={cn("overflow-hidden bg-vermilion py-3.5", className)}
       aria-hidden="true"
     >
       <div

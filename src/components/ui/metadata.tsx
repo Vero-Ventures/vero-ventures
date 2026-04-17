@@ -28,10 +28,7 @@ export function MetaRow({
 }) {
   return (
     <div
-      className={cn(
-        "flex flex-wrap items-center gap-x-8 gap-y-3",
-        className
-      )}
+      className={cn("flex flex-wrap items-center gap-x-8 gap-y-3", className)}
     >
       {items.map((item, i) => (
         <Meta key={i} label={item.label} value={item.value} />

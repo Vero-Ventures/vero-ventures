@@ -80,7 +80,8 @@ export function OurServicesSection() {
             </h2>
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-ink-muted">
-            We work best as your dedicated build partner — not a vendor you manage, but a studio that ships.
+            We work best as your dedicated build partner — not a vendor you
+            manage, but a studio that ships.
           </p>
         </div>
 
@@ -92,14 +93,16 @@ export function OurServicesSection() {
                 onClick={() => setOpen(open === i ? null : i)}
                 className="group flex w-full items-center gap-6 py-7 text-left transition-colors hover:text-ink"
               >
-                <span className="font-mono text-xs text-ink-muted w-8 shrink-0">
+                <span className="w-8 shrink-0 font-mono text-xs text-ink-muted">
                   {cap.num}
                 </span>
                 <div className="flex flex-1 flex-col gap-1 md:flex-row md:items-center md:justify-between">
                   <h3
                     className={cn(
                       "font-display text-2xl font-semibold transition-colors md:text-3xl",
-                      open === i ? "text-vermilion" : "text-ink group-hover:text-ink"
+                      open === i
+                        ? "text-vermilion"
+                        : "text-ink group-hover:text-ink"
                     )}
                   >
                     {cap.title}
@@ -110,7 +113,7 @@ export function OurServicesSection() {
                 </div>
                 <span
                   className={cn(
-                    "ml-4 font-mono text-xl text-ink-muted transition-transform duration-200 shrink-0",
+                    "ml-4 shrink-0 font-mono text-xl text-ink-muted transition-transform duration-200",
                     open === i ? "rotate-45 text-vermilion" : ""
                   )}
                 >

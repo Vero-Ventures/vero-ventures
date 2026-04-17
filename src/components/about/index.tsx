@@ -8,7 +8,7 @@ export function AboutUsSection() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="studio" className="px-8 py-24 bg-paper-elevated" ref={ref}>
+    <section id="studio" className="bg-paper-elevated px-8 py-24" ref={ref}>
       <div className="mx-auto max-w-7xl">
         <div className="grid grid-cols-1 gap-16 md:grid-cols-2">
           {/* Left — name + quote */}
@@ -48,7 +48,9 @@ export function AboutUsSection() {
 
             <blockquote className="mt-10 border-l-2 border-vermilion pl-8">
               <p className="font-display text-2xl italic leading-snug text-ink md:text-3xl">
-                &ldquo;I love turning wild ideas into real products. If you&apos;re building something ambitious, I want to be the person who makes it happen with you.&rdquo;
+                &ldquo;I love turning wild ideas into real products. If
+                you&apos;re building something ambitious, I want to be the
+                person who makes it happen with you.&rdquo;
               </p>
             </blockquote>
 
@@ -66,7 +68,11 @@ export function AboutUsSection() {
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+            transition={{
+              duration: 0.7,
+              delay: 0.15,
+              ease: [0.22, 1, 0.36, 1],
+            }}
             className="flex flex-col justify-center"
           >
             <div className="space-y-5 text-base leading-relaxed text-ink-muted">
@@ -74,8 +80,8 @@ export function AboutUsSection() {
                 I&apos;m an AI engineer and founder who has taken multiple
                 ventures from zero to production. I studied Machine Learning
                 &amp; Robotics at Georgia Tech and have spent years building
-                software that actually ships — not just prototypes that look good
-                in a pitch.
+                software that actually ships — not just prototypes that look
+                good in a pitch.
               </p>
               <p>
                 When you work with me, you get someone who is genuinely excited
@@ -102,7 +108,9 @@ export function AboutUsSection() {
                   <p className="font-mono text-[9px] uppercase tracking-[0.15em] text-ink-muted">
                     {item.label}
                   </p>
-                  <p className="mt-1 font-mono text-[11px] text-ink">{item.value}</p>
+                  <p className="mt-1 font-mono text-[11px] text-ink">
+                    {item.value}
+                  </p>
                 </div>
               ))}
             </div>

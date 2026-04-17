@@ -15,7 +15,7 @@ export function StatsSection() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section className="border-y border-hairline px-8 py-20 bg-paper" ref={ref}>
+    <section className="border-y border-hairline bg-paper px-8 py-20" ref={ref}>
       <div className="mx-auto max-w-7xl">
         <div className="grid grid-cols-2 gap-x-8 gap-y-12 md:grid-cols-4">
           {stats.map((stat, i) => (
@@ -23,7 +23,11 @@ export function StatsSection() {
               key={stat.label}
               initial={{ opacity: 0, y: 16 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
+              transition={{
+                duration: 0.5,
+                delay: i * 0.1,
+                ease: [0.22, 1, 0.36, 1],
+              }}
             >
               <div className="flex items-end gap-1">
                 <span className="font-display text-6xl font-semibold leading-none text-ink md:text-7xl">

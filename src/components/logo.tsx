@@ -40,10 +40,10 @@ export function Logo({
       <LogoMark size={markSize} />
       {showWordmark && (
         <div className="flex flex-col gap-0.5 leading-none">
-          <span className="font-mono text-[11px] font-bold tracking-[0.22em] text-ink uppercase">
+          <span className="font-mono text-[11px] font-bold uppercase tracking-[0.22em] text-ink">
             Vero
           </span>
-          <span className="font-mono text-[8.5px] font-medium tracking-[0.28em] text-ink-muted uppercase">
+          <span className="font-mono text-[8.5px] font-medium uppercase tracking-[0.28em] text-ink-muted">
             Ventures
           </span>
         </div>

@@ -2,7 +2,8 @@ import type { Config } from "tailwindcss";
 import svgToDataUri from "mini-svg-data-uri";
 import twAnimate from "tailwindcss-animate";
 // eslint-disable-next-line @typescript-eslint/no-require-imports
-const flattenColorPalette = require("tailwindcss/lib/util/flattenColorPalette").default;
+const flattenColorPalette =
+  require("tailwindcss/lib/util/flattenColorPalette").default;
 
 const config = {
   darkMode: ["class"],
@@ -32,7 +33,7 @@ const config = {
         ink: "hsl(var(--color-ink))",
         "ink-muted": "hsl(var(--color-ink-muted))",
         hairline: "hsl(var(--color-hairline))",
-        vermilion: "hsl(var(--color-accent))",   // accent blue (name kept for compatibility)
+        vermilion: "hsl(var(--color-accent))", // accent blue (name kept for compatibility)
 
         // shadcn tokens
         border: "hsl(var(--border))",

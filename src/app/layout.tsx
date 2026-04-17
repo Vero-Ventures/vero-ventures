@@ -92,7 +92,9 @@ function Footer() {
           </p>
           <div className="flex items-center gap-2">
             <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-vermilion" />
-            <span className="font-mono text-xs text-ink-muted">NOW BOOKING</span>
+            <span className="font-mono text-xs text-ink-muted">
+              NOW BOOKING
+            </span>
           </div>
         </div>
       </div>

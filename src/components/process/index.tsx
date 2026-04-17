@@ -39,7 +39,7 @@ export function ProcessSection() {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="process" className="px-8 py-24 bg-paper-elevated">
+    <section id="process" className="bg-paper-elevated px-8 py-24">
       <div className="mx-auto max-w-7xl" ref={ref}>
         {/* Header */}
         <div className="mb-16">
@@ -63,7 +63,11 @@ export function ProcessSection() {
                 key={step.phase}
                 initial={{ opacity: 0, x: -20 }}
                 animate={inView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.5, delay: i * 0.12, ease: [0.22, 1, 0.36, 1] }}
+                transition={{
+                  duration: 0.5,
+                  delay: i * 0.12,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
                 className="grid grid-cols-1 gap-6 py-10 md:grid-cols-[6.5rem_1fr]"
               >
                 {/* Week marker */}
@@ -100,7 +104,9 @@ export function ProcessSection() {
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <p className="font-display text-xl text-ink-muted">
               Ready to start?{" "}
-              <span className="text-ink">Intro calls are 30 minutes, free.</span>
+              <span className="text-ink">
+                Intro calls are 30 minutes, free.
+              </span>
             </p>
             <a
               href="#calendly"
