@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 const faqs = [
   {
     q: "How much does an MVP cost?",
-    a: "Most projects land between $15k–$40k CAD depending on scope and complexity. We scope tightly before committing to a number — you'll always know the full cost before we start.",
+    a: "Pricing depends on the scope and constraints of your project — we can work within a range of budgets. We scope tightly before committing to a number, so you'll always know the full cost before we start.",
   },
   {
     q: "How fast can you start?",
