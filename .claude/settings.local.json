@@ -1,6 +1,17 @@
 {
-    "attribution": {
-        "commit": "",
-        "pr": ""
-    }
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "permissions": {
+    "allow": [
+      "Bash(bun run *)",
+      "Bash(npm show *)",
+      "Bash(bun pm *)",
+      "Bash(bun add *)",
+      "WebFetch(domain:www.linkedin.com)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
+    ]
+  }
 }
