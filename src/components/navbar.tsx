@@ -1,27 +1,74 @@
-import { Lightbulb } from "lucide-react";
-import type { ReactNode } from "react";
+"use client";
+
+import { useState, useEffect } from "react";
+import { cn } from "@/lib/utils";
 
 export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <header>
-      <div className="mx-auto flex max-w-screen-xl flex-row items-center gap-4 p-8 md:justify-between">
-        <div className="rounded-full bg-primary p-2 text-xl font-bold text-primary-foreground">
-          <Lightbulb />
+    <header
+      className={cn(
+        "sticky top-0 z-50 transition-all duration-300",
+        scrolled
+          ? "bg-paper/95 backdrop-blur-sm border-b border-hairline"
+          : "bg-transparent"
+      )}
+    >
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-5">
+        {/* Wordmark + status */}
+        <div className="flex items-center gap-4">
+          <a href="/" className="font-display text-xl font-semibold text-ink">
+            Vero Ventures
+          </a>
         </div>
-        <div className="text-2xl font-bold">Vero Ventures</div>
-        <nav className="hidden flex-1 flex-row items-center justify-center space-x-14 md:flex">
+
+        {/* Nav links */}
+        <nav className="hidden items-center gap-10 md:flex">
           <NavLink href="#work">Work</NavLink>
-          <NavLink href="#services">Services</NavLink>
-          <NavLink href="#aboutUs">About Us</NavLink>
+          <NavLink href="#process">Process</NavLink>
+          <NavLink href="#studio">Studio</NavLink>
+          <NavLink href="#faq">FAQ</NavLink>
         </nav>
+
+        {/* CTA */}
+        <a
+          href="#calendly"
+          className="hidden items-center gap-1.5 rounded-full border border-ink bg-ink px-5 py-2 font-mono text-xs font-medium text-paper transition-all duration-200 hover:bg-vermilion hover:border-vermilion md:flex"
+        >
+          Start a project ↗
+        </a>
+
+        {/* Mobile CTA */}
+        <a
+          href="#calendly"
+          className="flex items-center gap-1.5 rounded-full border border-ink bg-ink px-4 py-2 font-mono text-xs font-medium text-paper md:hidden"
+        >
+          Let&apos;s talk
+        </a>
       </div>
     </header>
   );
 }
 
-function NavLink({ children, href }: { children: ReactNode; href: string }) {
+function NavLink({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) {
   return (
-    <a href={href} className="cursor-pointer">
+    <a
+      href={href}
+      className="font-mono text-xs uppercase tracking-widest text-ink-muted transition-colors hover:text-ink"
+    >
       {children}
     </a>
   );

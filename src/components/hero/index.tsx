@@ -2,54 +2,69 @@
 
 import { motion } from "framer-motion";
 
-import type { ReactNode } from "react";
-import { GradualSpacing } from "../ui/gradual-spacing";
-import BookAppointmentButton from "../book-appointment-button";
+const fadeUp = (delay = 0) => ({
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1], delay },
+});
 
 export function HeroSection() {
   return (
-    <section className="p-8 py-36 text-primary">
-      <div className="mx-auto max-w-7xl">
-        <HeroTitle text="Turn your ideas into reality" />
-        <HeroDescription>
-          We partner with visionaries to transform ideas into successful
-          businesses, offering expert guidance from concept to launch.
-        </HeroDescription>
-        <div className="mt-10 flex justify-center">
-          <BookAppointmentButton />
-        </div>
+    <section className="relative overflow-hidden px-8 pb-24 pt-20 md:pt-28">
+      <div className="mx-auto max-w-5xl text-center">
+        {/* Section marker */}
+        <motion.div {...fadeUp(0)} className="mb-10 flex items-center justify-center gap-3">
+          <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink-muted">
+            MVP Studio · Vancouver, BC
+          </span>
+        </motion.div>
+
+        {/* Main headline */}
+        <motion.h1
+          {...fadeUp(0.1)}
+          className="font-display text-5xl leading-[1.05] tracking-tight text-ink md:text-7xl lg:text-8xl"
+        >
+          We build the software your{" "}
+          <em className="text-vermilion">pitch deck</em>{" "}
+          promised.
+        </motion.h1>
+
+        {/* Sub */}
+        <motion.p
+          {...fadeUp(0.25)}
+          className="mx-auto mt-8 max-w-xl text-lg leading-relaxed text-ink-muted"
+        >
+          Vero Ventures is a small studio designing and shipping
+          production-grade MVPs for founders and companies — from first
+          sketch to live app in{" "}
+          <span className="font-medium text-ink">6–10 weeks</span>.
+        </motion.p>
+
+        {/* CTAs */}
+        <motion.div
+          {...fadeUp(0.35)}
+          className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row"
+        >
+          <a
+            href="#calendly"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-ink px-7 py-3.5 font-mono text-sm font-medium text-paper transition-all duration-200 hover:bg-vermilion"
+          >
+            Book an intro call ↗
+          </a>
+          <a
+            href="#work"
+            className="inline-flex items-center justify-center gap-2 rounded-full border border-hairline px-7 py-3.5 font-mono text-sm font-medium text-ink transition-all duration-200 hover:border-ink"
+          >
+            See selected work
+          </a>
+        </motion.div>
+
+        {/* Decorative rule */}
+        <motion.div
+          {...fadeUp(0.45)}
+          className="mt-20 h-px w-full bg-hairline"
+        />
       </div>
     </section>
-  );
-}
-
-export function HeroTitle({ text }: { text: string }) {
-  return (
-    <GradualSpacing
-      className="mb-2 text-balance text-center text-7xl font-bold tracking-tight"
-      text={text}
-    />
-  );
-}
-
-export function HeroDescription({ children }: { children: ReactNode }) {
-  return (
-    <motion.p
-      initial={{
-        opacity: 0,
-        y: 20,
-      }}
-      animate={{
-        opacity: 1,
-        y: [20, -5, 0],
-      }}
-      transition={{
-        duration: 0.5,
-        ease: [0.4, 0.0, 0.2, 1],
-      }}
-      className="relative mx-auto max-w-2xl pt-8 text-center text-xl"
-    >
-      {children}
-    </motion.p>
   );
 }

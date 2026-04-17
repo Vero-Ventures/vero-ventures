@@ -1,8 +1,8 @@
 import type { Config } from "tailwindcss";
-
-import { default as flattenColorPalette } from "tailwindcss";
 import svgToDataUri from "mini-svg-data-uri";
 import twAnimate from "tailwindcss-animate";
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const flattenColorPalette = require("tailwindcss/lib/util/flattenColorPalette").default;
 
 const config = {
   darkMode: ["class"],
@@ -22,7 +22,21 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        display: ["var(--font-fraunces)", "Georgia", "serif"],
+        sans: ["var(--font-geist)", "system-ui", "sans-serif"],
+        mono: ["var(--font-jetbrains-mono)", "monospace"],
+      },
       colors: {
+        // Studio Journal palette
+        paper: "#F1EDE4",
+        "paper-elevated": "#FAF7F1",
+        ink: "#0F0E0C",
+        "ink-muted": "#6C6758",
+        hairline: "#D9D2C3",
+        vermilion: "#E8452C",
+
+        // Shadcn token system (mapped to new palette)
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -76,12 +90,22 @@ const config = {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-50%)" },
+        },
+        "fade-up": {
+          from: { opacity: "0", transform: "translateY(16px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        marquee: "marquee 28s linear infinite",
+        "fade-up": "fade-up 0.6s ease-out forwards",
       },
     },
   },
@@ -108,10 +132,7 @@ function addVariablesForColors({ addBase, theme }: any) {
   const newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
-
-  addBase({
-    ":root": newVars,
-  });
+  addBase({ ":root": newVars });
 }
 
 export default config;
