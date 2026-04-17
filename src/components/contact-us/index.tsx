@@ -1,4 +1,4 @@
-import CalendlyEmbed from "../../../components/calendly-embed";
+import CalendlyEmbed from "../calendly-embed";
 
 export function ContactUsSection() {
   return (
