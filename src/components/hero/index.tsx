@@ -33,8 +33,8 @@ export function HeroSection() {
           {...fadeUp(0.1)}
           className="font-display text-5xl leading-[1.05] tracking-tight text-ink md:text-7xl lg:text-8xl"
         >
-          We build the software your{" "}
-          <em className="text-azure">pitch deck</em> promised.
+          We build the software your <em className="text-azure">pitch deck</em>{" "}
+          promised.
         </motion.h1>
 
         {/* Sub */}
