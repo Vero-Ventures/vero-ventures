@@ -3,7 +3,6 @@ import { MarqueeRibbon } from "@/components/marquee";
 import { OurServicesSection } from "@/components/services";
 import { ProcessSection } from "@/components/process";
 import { OurWorkSection } from "@/components/projects";
-import { StatsSection } from "@/components/stats";
 import { TechnologiesSection } from "@/components/technologies";
 import { AboutUsSection } from "@/components/about";
 import { FAQSection } from "@/components/faq";
@@ -17,7 +16,6 @@ export default function LandingPage() {
       <OurServicesSection />
       <ProcessSection />
       <OurWorkSection />
-      <StatsSection />
       <TechnologiesSection />
       <AboutUsSection />
       <FAQSection />

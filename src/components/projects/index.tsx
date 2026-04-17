@@ -53,7 +53,7 @@ export function OurWorkSection() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="work" className="px-8 py-24" ref={ref}>
+    <section id="work" className="px-8 pb-24 pt-0" ref={ref}>
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="mb-16 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">

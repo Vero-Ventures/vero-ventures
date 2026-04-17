@@ -39,16 +39,13 @@ export function FAQSection() {
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="mb-16">
-          <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink-muted">
-            Common questions
-          </span>
           <h2 className="mt-3 font-display text-4xl font-semibold text-ink md:text-5xl">
-            FAQ
+            Frequently Asked Questions
           </h2>
         </div>
 
         {/* Questions */}
-        <div className="grid grid-cols-1 gap-0 divide-y divide-hairline border-t border-hairline md:grid-cols-2 md:divide-y-0 md:gap-x-24 md:[&>*:nth-child(n+3)]:border-t md:[&>*]:border-t">
+        <div className="grid grid-cols-1 gap-0 divide-y divide-hairline md:grid-cols-2 md:gap-x-24 md:divide-y-0">
           {faqs.map((faq, i) => (
             <div key={i} className="border-hairline">
               <button

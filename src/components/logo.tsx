@@ -10,19 +10,16 @@ export function LogoMark({ className, size = 32 }: LogoMarkProps) {
     <svg
       width={size}
       height={size}
-      viewBox="0 0 44 40"
+      viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={cn(className)}
       aria-label="Vero Ventures mark"
     >
-      {/* Bold V — uses currentColor so it flips with light/dark mode */}
-      <path
-        d="M 0,0 L 9,0 L 22,30 L 35,0 L 44,0 L 22,38 Z"
-        className="fill-ink"
-      />
-      {/* Accent dot at tip — uses the theme accent color */}
-      <circle cx="22" cy="35" r="4" className="fill-vermilion" />
+      {/* Lightning bolt — upper body */}
+      <polygon points="13,2 3,14 12,14 12,10" className="fill-ink" />
+      {/* Lightning bolt — lower tip, accent color */}
+      <polygon points="12,14 11,22 21,10 12,10" className="fill-vermilion" />
     </svg>
   );
 }
@@ -33,14 +30,23 @@ interface LogoProps {
   showWordmark?: boolean;
 }
 
-export function Logo({ className, markSize = 28, showWordmark = true }: LogoProps) {
+export function Logo({
+  className,
+  markSize = 28,
+  showWordmark = true,
+}: LogoProps) {
   return (
     <div className={cn("flex items-center gap-3", className)}>
       <LogoMark size={markSize} />
       {showWordmark && (
-        <span className="font-display text-xl font-semibold text-ink">
-          Vero Ventures
-        </span>
+        <div className="flex flex-col gap-0.5 leading-none">
+          <span className="font-mono text-[11px] font-bold tracking-[0.22em] text-ink uppercase">
+            Vero
+          </span>
+          <span className="font-mono text-[8.5px] font-medium tracking-[0.28em] text-ink-muted uppercase">
+            Ventures
+          </span>
+        </div>
       )}
     </div>
   );
