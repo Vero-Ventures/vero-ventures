@@ -5,6 +5,7 @@ import { useTheme } from "next-themes";
 import { Sun, Moon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Logo } from "@/components/logo";
+import Link from "next/link";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -89,11 +90,11 @@ function NavLink({
   children: React.ReactNode;
 }) {
   return (
-    <a
+    <Link
       href={href}
       className="font-mono text-xs uppercase tracking-widest text-ink-muted transition-colors hover:text-ink"
     >
       {children}
-    </a>
+    </Link>
   );
 }
