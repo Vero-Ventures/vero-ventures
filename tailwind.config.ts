@@ -1,8 +1,9 @@
 import type { Config } from "tailwindcss";
-
-import { default as flattenColorPalette } from "tailwindcss";
 import svgToDataUri from "mini-svg-data-uri";
 import twAnimate from "tailwindcss-animate";
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const flattenColorPalette =
+  require("tailwindcss/lib/util/flattenColorPalette").default;
 
 const config = {
   darkMode: ["class"],
@@ -17,12 +18,24 @@ const config = {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
+      screens: { "2xl": "1400px" },
     },
     extend: {
+      fontFamily: {
+        display: ["var(--font-instrument)", "Georgia", "serif"],
+        sans: ["var(--font-geist)", "system-ui", "sans-serif"],
+        mono: ["var(--font-jetbrains-mono)", "monospace"],
+      },
       colors: {
+        // Semantic tokens — all CSS-variable-driven so dark mode works automatically
+        paper: "hsl(var(--color-paper))",
+        "paper-elevated": "hsl(var(--color-paper-elevated))",
+        ink: "hsl(var(--color-ink))",
+        "ink-muted": "hsl(var(--color-ink-muted))",
+        hairline: "hsl(var(--color-hairline))",
+        azure: "hsl(var(--color-accent))",
+
+        // shadcn tokens
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -72,9 +85,15 @@ const config = {
           to: { height: "0" },
         },
         scroll: {
-          to: {
-            transform: "translate(calc(-50% - 0.5rem))",
-          },
+          to: { transform: "translate(calc(-50% - 0.5rem))" },
+        },
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-50%)" },
+        },
+        "fade-up": {
+          from: { opacity: "0", transform: "translateY(16px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
         },
       },
       animation: {
@@ -82,6 +101,8 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        marquee: "marquee 28s linear infinite",
+        "fade-up": "fade-up 0.6s ease-out forwards",
       },
     },
   },
@@ -108,10 +129,7 @@ function addVariablesForColors({ addBase, theme }: any) {
   const newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
-
-  addBase({
-    ":root": newVars,
-  });
+  addBase({ ":root": newVars });
 }
 
 export default config;
