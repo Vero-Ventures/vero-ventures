@@ -4,7 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/navbar";
 import { Logo } from "@/components/logo";
-import { ThemeProvider } from "../../components/theme-provider";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
