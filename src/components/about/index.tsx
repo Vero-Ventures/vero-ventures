@@ -48,7 +48,7 @@ export function AboutUsSection() {
 
             <blockquote className="mt-10 border-l-2 border-vermilion pl-8">
               <p className="font-display text-2xl italic leading-snug text-ink md:text-3xl">
-                &ldquo;I started Vero because founders deserve a builder who&apos;s as invested in the outcome as they are.&rdquo;
+                &ldquo;I love turning wild ideas into real products. If you&apos;re building something ambitious, I want to be the person who makes it happen with you.&rdquo;
               </p>
             </blockquote>
 
@@ -71,22 +71,23 @@ export function AboutUsSection() {
           >
             <div className="space-y-5 text-base leading-relaxed text-ink-muted">
               <p>
-                Yaniv is an AI engineer and serial founder with an M.S. in Machine
-                Learning &amp; Robotics from Georgia Tech (3.9 GPA). He has taken
-                multiple ventures from zero to production — writing the code,
-                making the product decisions, and staying directly accountable to
-                the people he builds for.
+                I&apos;m an AI engineer and founder who has taken multiple
+                ventures from zero to production. I studied Machine Learning
+                &amp; Robotics at Georgia Tech and have spent years building
+                software that actually ships — not just prototypes that look good
+                in a pitch.
               </p>
               <p>
-                At Vero Ventures, he works directly with every client. No
-                handoffs, no account managers, no gap between the person who sold
-                you the project and the person building it. When you hire Vero,
-                you get Yaniv.
+                When you work with me, you get someone who is genuinely excited
+                about what you&apos;re building. I ask the right questions, move
+                fast, communicate constantly, and treat your deadline like my
+                own. Clients tend to enjoy the process — which is not something
+                you can say about most dev shops.
               </p>
               <p>
-                He specialises in AI-integrated products, full-stack web and
-                mobile apps, and the kind of fast, focused builds that turn an
-                idea into something investors and customers can actually use.
+                When I&apos;m not shipping code, I&apos;m usually somewhere new.
+                I travel as much as I can and bring that same curiosity and
+                adaptability to every project I take on.
               </p>
             </div>
 

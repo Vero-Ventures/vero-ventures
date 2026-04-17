@@ -2,14 +2,14 @@ import CalendlyEmbed from "../../../components/calendly-embed";
 
 export function ContactUsSection() {
   return (
-    <section id="contact" className="bg-ink px-8 py-28">
+    <section id="contact" className="bg-[#080E1C] dark:bg-[#060912] px-8 py-28">
       <div className="mx-auto max-w-7xl">
         {/* Editorial CTA */}
         <div className="mb-16 border-b border-white/10 pb-16">
           <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40">
             Let&apos;s build
           </span>
-          <h2 className="mt-4 font-display text-5xl font-semibold text-paper md:text-6xl lg:text-7xl">
+          <h2 className="mt-4 font-display text-5xl font-semibold text-white md:text-6xl lg:text-7xl">
             Have an idea worth building?{" "}
             <em className="not-italic text-vermilion">Let&apos;s make it real.</em>
           </h2>
@@ -37,11 +37,11 @@ export function ContactUsSection() {
         </div>
 
         {/* Calendly frame */}
-        <div className="overflow-hidden rounded-sm border border-white/10 bg-paper-elevated">
+        <div className="overflow-hidden rounded-sm border border-white/10 bg-[#F0F5FF]">
           <div className="border-b border-hairline px-6 py-4">
             <div className="flex items-center gap-2">
               <span className="inline-block h-1.5 w-1.5 rounded-full bg-vermilion" />
-              <span className="font-mono text-[10px] uppercase tracking-widest text-ink-muted">
+              <span className="font-mono text-[10px] uppercase tracking-widest text-[#526080]">
                 Schedule · 30 min intro call
               </span>
             </div>

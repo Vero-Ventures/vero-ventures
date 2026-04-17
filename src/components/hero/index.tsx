@@ -37,7 +37,7 @@ export function HeroSection() {
           Vero Ventures is a small studio designing and shipping
           production-grade MVPs for founders and companies — from first
           sketch to live app in{" "}
-          <span className="font-medium text-ink">6–10 weeks</span>.
+          <span className="font-medium text-ink">1–2 weeks</span>.
         </motion.p>
 
         {/* CTAs */}

@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     q: "What happens after the MVP ships?",
-    a: "You get two weeks of free post-launch support to squash anything that surfaces. After that, we offer ongoing retainers for studios that want to keep iterating — or we hand off cleanly so your own team can take over.",
+    a: "You get post-launch support to squash anything that surfaces. After that, we offer ongoing retainers for teams that want to keep iterating — or we hand off cleanly so your own team can take over.",
   },
   {
     q: "Can you work with our existing team?",

@@ -3,6 +3,8 @@ import { Instrument_Serif, Geist, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/navbar";
+import { Logo } from "@/components/logo";
+import { ThemeProvider } from "../../components/theme-provider";
 
 const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
@@ -27,7 +29,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Vero Ventures — MVP Studio",
   description:
-    "We design and ship production-grade MVPs for founders and companies. From first sketch to live app in 6–10 weeks.",
+    "We design and ship production-grade MVPs for founders and companies. From first sketch to live app in 1–2 weeks.",
 };
 
 export default function RootLayout({
@@ -44,11 +46,14 @@ export default function RootLayout({
         jetbrainsMono.variable,
         "scroll-smooth"
       )}
+      suppressHydrationWarning
     >
       <body className="min-h-dvh antialiased">
-        <Navbar />
-        {children}
-        <Footer />
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Navbar />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
@@ -60,9 +65,12 @@ function Footer() {
       <div className="mx-auto max-w-7xl px-8 py-12">
         <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
           <div>
-            <div className="font-display text-2xl font-semibold text-ink">
-              Vero Ventures
-            </div>
+            <Logo markSize={28} />
+            <p className="mt-3 font-mono text-xs text-ink-muted">
+              Set in Instrument Serif, Geist &amp; JetBrains Mono
+              <span className="mx-2">·</span>
+              Built in Vancouver
+            </p>
           </div>
 
           <div className="flex items-center gap-6">
@@ -89,9 +97,7 @@ function Footer() {
           </p>
           <div className="flex items-center gap-2">
             <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-vermilion" />
-            <span className="font-mono text-xs text-ink-muted">
-              NOW BOOKING
-            </span>
+            <span className="font-mono text-xs text-ink-muted">NOW BOOKING</span>
           </div>
         </div>
       </div>

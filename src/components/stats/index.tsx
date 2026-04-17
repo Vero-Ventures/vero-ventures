@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const stats = [
-  { value: "8", unit: "weeks", label: "Average ship time" },
+  { value: "1–2", unit: "weeks", label: "Average ship time" },
   { value: "10+", unit: "", label: "Projects shipped" },
   { value: "100%", unit: "", label: "Founder-led code" },
   { value: "0", unit: "", label: "Templates used" },

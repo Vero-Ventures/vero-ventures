@@ -17,7 +17,7 @@ const capabilities = [
       "Deployment on your infrastructure",
       "Handover with documentation",
     ],
-    timeline: "6–10 weeks",
+    timeline: "1–2 weeks",
   },
   {
     num: "02",
@@ -31,7 +31,7 @@ const capabilities = [
       "RAG pipelines & embeddings",
       "AI feature shipped end-to-end",
     ],
-    timeline: "3–6 weeks",
+    timeline: "1–2 weeks",
   },
   {
     num: "03",

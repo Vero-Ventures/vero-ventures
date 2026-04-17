@@ -4,27 +4,66 @@
 
 @layer base {
   :root {
-    /* Studio Journal palette mapped to shadcn tokens */
-    --background: 38 27% 92%;       /* #F1EDE4 paper */
-    --foreground: 30 6% 6%;         /* #0F0E0C ink */
-    --card: 38 43% 97%;             /* #FAF7F1 paper-elevated */
-    --card-foreground: 30 6% 6%;
-    --popover: 38 43% 97%;
-    --popover-foreground: 30 6% 6%;
-    --primary: 30 6% 6%;            /* ink */
-    --primary-foreground: 38 27% 92%; /* paper */
-    --secondary: 38 27% 85%;
-    --secondary-foreground: 30 6% 6%;
-    --muted: 38 27% 88%;
-    --muted-foreground: 32 8% 40%;  /* ink-muted */
-    --accent: 38 27% 85%;
-    --accent-foreground: 30 6% 6%;
-    --destructive: 12 83% 54%;      /* vermilion */
-    --destructive-foreground: 38 27% 92%;
-    --border: 35 20% 80%;           /* hairline */
-    --input: 35 20% 80%;
-    --ring: 30 6% 6%;
+    /* Blue Studio — light mode */
+    --color-paper: 222 60% 97%;
+    --color-paper-elevated: 220 80% 99%;
+    --color-ink: 222 65% 9%;
+    --color-ink-muted: 217 22% 42%;
+    --color-hairline: 218 35% 87%;
+    --color-accent: 220 100% 52%;
+
+    /* shadcn tokens */
+    --background: 222 60% 97%;
+    --foreground: 222 65% 9%;
+    --card: 220 80% 99%;
+    --card-foreground: 222 65% 9%;
+    --popover: 220 80% 99%;
+    --popover-foreground: 222 65% 9%;
+    --primary: 222 65% 9%;
+    --primary-foreground: 222 60% 97%;
+    --secondary: 218 40% 92%;
+    --secondary-foreground: 222 65% 9%;
+    --muted: 218 35% 93%;
+    --muted-foreground: 217 22% 42%;
+    --accent: 218 40% 92%;
+    --accent-foreground: 222 65% 9%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 218 35% 87%;
+    --input: 218 35% 87%;
+    --ring: 220 100% 52%;
     --radius: 0.25rem;
+  }
+
+  .dark {
+    /* Blue Studio — dark mode */
+    --color-paper: 222 65% 6%;
+    --color-paper-elevated: 222 55% 10%;
+    --color-ink: 218 60% 94%;
+    --color-ink-muted: 217 22% 65%;
+    --color-hairline: 222 35% 18%;
+    --color-accent: 217 100% 65%;
+
+    /* shadcn tokens */
+    --background: 222 65% 6%;
+    --foreground: 218 60% 94%;
+    --card: 222 55% 10%;
+    --card-foreground: 218 60% 94%;
+    --popover: 222 55% 10%;
+    --popover-foreground: 218 60% 94%;
+    --primary: 218 60% 94%;
+    --primary-foreground: 222 65% 6%;
+    --secondary: 222 35% 16%;
+    --secondary-foreground: 218 60% 94%;
+    --muted: 222 35% 16%;
+    --muted-foreground: 217 22% 65%;
+    --accent: 222 35% 16%;
+    --accent-foreground: 218 60% 94%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 222 35% 18%;
+    --input: 222 35% 18%;
+    --ring: 217 100% 65%;
   }
 }
 
@@ -35,35 +74,17 @@
 
   html {
     font-family: var(--font-geist), system-ui, sans-serif;
-    background-color: #F1EDE4;
-    color: #0F0E0C;
   }
 
   body {
     @apply bg-paper text-ink antialiased;
-    /* Subtle grain texture */
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
   }
 
-  /* Font utility classes */
   .font-display {
     font-family: var(--font-fraunces), Georgia, serif;
   }
+
   .font-mono {
     font-family: var(--font-jetbrains-mono), monospace;
-  }
-}
-
-/* Hairline rule utility */
-@layer utilities {
-  .hairline {
-    border-color: #D9D2C3;
-    border-width: 1px;
-  }
-  .hairline-t {
-    border-top: 1px solid #D9D2C3;
-  }
-  .hairline-b {
-    border-bottom: 1px solid #D9D2C3;
   }
 }

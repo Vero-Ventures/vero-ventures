@@ -5,32 +5,32 @@ import { useRef } from "react";
 
 const steps = [
   {
-    week: "W1",
+    week: "D1–2",
     phase: "Scope",
     title: "We align on exactly what to build.",
     description:
-      "We run a focused scoping session to nail down your core user, the one thing that makes your MVP worth having, and the feature set that proves it. You leave with a locked spec and a project timeline.",
+      "A focused scoping session to nail down your core user, the one thing that makes your MVP worth having, and the feature set that proves it. You leave with a locked spec and a start date.",
   },
   {
-    week: "W2–3",
+    week: "D3–4",
     phase: "Design",
     title: "You see it before a single line of production code.",
     description:
-      "High-fidelity UI in Figma, user flows, component library. We design fast and iterate with you in real-time. No waterfall — changes happen in the design stage, not after they're built.",
+      "High-fidelity UI, user flows, and component decisions — done fast and iterated with you in real-time. Changes happen here, not after they're built.",
   },
   {
-    week: "W4–7",
+    week: "D5–10",
     phase: "Build",
-    title: "Full-stack development. Weekly check-ins. No surprises.",
+    title: "Full-stack development. Daily updates. No surprises.",
     description:
-      "We ship to a staging environment weekly so you can see progress. You have a direct line to the developer doing the work — no account manager, no ticket queue.",
+      "We push to a staging environment daily so you can see progress in real-time. You have a direct line to the person writing your code — no account manager, no ticket queue.",
   },
   {
-    week: "W8",
+    week: "D11–14",
     phase: "Ship",
     title: "Live. Yours. With handover.",
     description:
-      "Production deployment, domain setup, monitoring configured. Full code handover — you own everything. We stay available for two weeks post-launch to squash anything that surfaces.",
+      "Production deployment, domain setup, monitoring configured. Full code handover — you own everything. We stay available post-launch to squash anything that surfaces.",
   },
 ];
 
@@ -48,7 +48,7 @@ export function ProcessSection() {
           </span>
           <h2 className="mt-3 font-display text-4xl font-semibold text-ink md:text-5xl">
             From &ldquo;let&apos;s go&rdquo; to{" "}
-            <em className="not-italic text-vermilion">live</em> in 8 weeks.
+            <em className="not-italic text-vermilion">live</em> in 1–2 weeks.
           </h2>
         </div>
 

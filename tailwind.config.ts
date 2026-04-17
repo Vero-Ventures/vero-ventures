@@ -17,9 +17,7 @@ const config = {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
+      screens: { "2xl": "1400px" },
     },
     extend: {
       fontFamily: {
@@ -28,15 +26,15 @@ const config = {
         mono: ["var(--font-jetbrains-mono)", "monospace"],
       },
       colors: {
-        // Studio Journal palette
-        paper: "#F1EDE4",
-        "paper-elevated": "#FAF7F1",
-        ink: "#0F0E0C",
-        "ink-muted": "#6C6758",
-        hairline: "#D9D2C3",
-        vermilion: "#E8452C",
+        // Semantic tokens — all CSS-variable-driven so dark mode works automatically
+        paper: "hsl(var(--color-paper))",
+        "paper-elevated": "hsl(var(--color-paper-elevated))",
+        ink: "hsl(var(--color-ink))",
+        "ink-muted": "hsl(var(--color-ink-muted))",
+        hairline: "hsl(var(--color-hairline))",
+        vermilion: "hsl(var(--color-accent))",   // accent blue (name kept for compatibility)
 
-        // Shadcn token system (mapped to new palette)
+        // shadcn tokens
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -86,9 +84,7 @@ const config = {
           to: { height: "0" },
         },
         scroll: {
-          to: {
-            transform: "translate(calc(-50% - 0.5rem))",
-          },
+          to: { transform: "translate(calc(-50% - 0.5rem))" },
         },
         marquee: {
           from: { transform: "translateX(0)" },
