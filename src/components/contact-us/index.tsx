@@ -11,9 +11,7 @@ export function ContactUsSection() {
           </span>
           <h2 className="mt-4 font-display text-5xl font-semibold text-white md:text-6xl lg:text-7xl">
             Have an idea worth building?{" "}
-            <em className="not-italic text-azure">
-              Let&apos;s make it real.
-            </em>
+            <em className="not-italic text-azure">Let&apos;s make it real.</em>
           </h2>
           <p className="mt-6 max-w-lg text-base leading-relaxed text-white/60">
             Intro calls are 30 minutes and free. No pitch, no pressure — just a
