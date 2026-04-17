@@ -8,7 +8,7 @@ import { ThemeProvider } from "../../components/theme-provider";
 
 const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
-  variable: "--font-fraunces",
+  variable: "--font-instrument",
   weight: "400",
   style: ["normal", "italic"],
   display: "swap",
