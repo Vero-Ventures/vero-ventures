@@ -20,7 +20,7 @@ export default function Navbar() {
       className={cn(
         "sticky top-0 z-50 transition-all duration-300",
         scrolled
-          ? "bg-paper/95 backdrop-blur-sm border-b border-hairline"
+          ? "border-b border-hairline bg-paper/95 backdrop-blur-sm"
           : "bg-transparent"
       )}
     >
@@ -40,7 +40,7 @@ export default function Navbar() {
           <ThemeToggle />
           <a
             href="#calendly"
-            className="hidden items-center gap-1.5 rounded-full border border-ink bg-ink px-5 py-2 font-mono text-xs font-medium text-paper transition-all duration-200 hover:bg-vermilion hover:border-vermilion md:flex"
+            className="hidden items-center gap-1.5 rounded-full border border-ink bg-ink px-5 py-2 font-mono text-xs font-medium text-paper transition-all duration-200 hover:border-vermilion hover:bg-vermilion md:flex"
           >
             Start a project ↗
           </a>
@@ -69,10 +69,14 @@ function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(isDark ? "light" : "dark")}
-      className="flex h-8 w-8 items-center justify-center rounded-full border border-hairline text-ink-muted transition-all duration-200 hover:border-ink hover:text-ink"
+      className="flex h-8 w-8 items-center justify-center rounded-full text-ink-muted transition-all duration-200 hover:text-ink"
       aria-label="Toggle theme"
     >
-      {isDark ? <Sun className="h-3.5 w-3.5" /> : <Moon className="h-3.5 w-3.5" />}
+      {isDark ? (
+        <Sun className="h-3.5 w-3.5" />
+      ) : (
+        <Moon className="h-3.5 w-3.5" />
+      )}
     </button>
   );
 }

@@ -13,7 +13,10 @@ export function HeroSection() {
     <section className="relative overflow-hidden px-8 pb-24 pt-20 md:pt-28">
       <div className="mx-auto max-w-5xl text-center">
         {/* Section marker */}
-        <motion.div {...fadeUp(0)} className="mb-10 flex items-center justify-center gap-3">
+        <motion.div
+          {...fadeUp(0)}
+          className="mb-10 flex items-center justify-center gap-3"
+        >
           <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink-muted">
             MVP Studio · Vancouver, BC
           </span>
@@ -25,8 +28,7 @@ export function HeroSection() {
           className="font-display text-5xl leading-[1.05] tracking-tight text-ink md:text-7xl lg:text-8xl"
         >
           We build the software your{" "}
-          <em className="text-vermilion">pitch deck</em>{" "}
-          promised.
+          <em className="text-vermilion">pitch deck</em> promised.
         </motion.h1>
 
         {/* Sub */}
@@ -35,9 +37,9 @@ export function HeroSection() {
           className="mx-auto mt-8 max-w-xl text-lg leading-relaxed text-ink-muted"
         >
           Vero Ventures is a small studio designing and shipping
-          production-grade MVPs for founders and companies — from first
-          sketch to live app in{" "}
-          <span className="font-medium text-ink">1–2 weeks</span>.
+          production-grade MVPs for founders and companies — from first sketch
+          to live app in <span className="font-medium text-ink">1–2 weeks</span>
+          .
         </motion.p>
 
         {/* CTAs */}
@@ -58,12 +60,6 @@ export function HeroSection() {
             See selected work
           </a>
         </motion.div>
-
-        {/* Decorative rule */}
-        <motion.div
-          {...fadeUp(0.45)}
-          className="mt-20 h-px w-full bg-hairline"
-        />
       </div>
     </section>
   );

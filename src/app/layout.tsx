@@ -66,11 +66,6 @@ function Footer() {
         <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
           <div>
             <Logo markSize={28} />
-            <p className="mt-3 font-mono text-xs text-ink-muted">
-              Set in Instrument Serif, Geist &amp; JetBrains Mono
-              <span className="mx-2">·</span>
-              Built in Vancouver
-            </p>
           </div>
 
           <div className="flex items-center gap-6">

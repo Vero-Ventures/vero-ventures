@@ -2,7 +2,6 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { LinkPreview } from "@/components/ui/link-preview";
 
 interface Project {
   num: string;
@@ -24,7 +23,7 @@ const projects: Project[] = [
     title: "Dynamic Needs Analysis",
     description:
       "A web-based financial planning tool that helps insurance advisors model complex life insurance scenarios for their clients — replacing manual spreadsheets with a guided, real-time analysis engine.",
-    outcome: "Adopted by 200+ advisors within 3 months of launch.",
+    outcome: "",
     year: "2024",
     type: "Web App",
     stack: "Next.js · TypeScript · Postgres",
@@ -38,7 +37,7 @@ const projects: Project[] = [
     title: "Clasibot",
     description:
       "An AI-powered bookkeeping assistant that automatically classifies bank transactions for small business owners — cutting hours of manual categorization down to a quick review.",
-    outcome: "Saves users an average of 4 hours per month on bookkeeping.",
+    outcome: "",
     year: "2024",
     type: "Web App · AI",
     stack: "Next.js · TypeScript · OpenAI",
@@ -143,18 +142,7 @@ function ProjectMeta({ project }: { project: Project }) {
 
       {/* Title */}
       <h3 className="mt-2 font-display text-3xl font-semibold text-ink md:text-4xl">
-        {!isNDA ? (
-          <LinkPreview
-            url={project.url}
-            className="transition-colors hover:text-vermilion"
-            width={280}
-            height={175}
-          >
-            {project.title}
-          </LinkPreview>
-        ) : (
-          project.title
-        )}
+        {project.title}
       </h3>
 
       {/* Meta chips */}
@@ -180,9 +168,11 @@ function ProjectMeta({ project }: { project: Project }) {
       </p>
 
       {/* Outcome */}
-      <div className="mt-5 flex items-start gap-2.5 border-l-2 border-vermilion pl-4">
-        <p className="text-sm font-medium text-ink">{project.outcome}</p>
-      </div>
+      {project.outcome && (
+        <div className="mt-5 flex items-start gap-2.5 border-l-2 border-vermilion pl-4">
+          <p className="text-sm font-medium text-ink">{project.outcome}</p>
+        </div>
+      )}
 
       {/* Link */}
       {!isNDA && (
