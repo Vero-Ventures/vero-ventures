@@ -10,7 +10,13 @@ const fadeUp = (delay = 0) => ({
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden px-8 pb-24 pt-20 md:pt-28">
+    <section className="relative overflow-hidden px-8 pb-24 pt-28 md:pt-36">
+      {/* Gradient blobs */}
+      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+        <div className="absolute -top-32 left-1/2 h-[600px] w-[700px] -translate-x-1/2 rounded-full bg-vermilion/10 blur-[120px]" />
+        <div className="absolute -top-10 right-0 h-[400px] w-[400px] rounded-full bg-blue-400/10 blur-[100px] dark:bg-blue-500/15" />
+        <div className="absolute bottom-0 left-0 h-[350px] w-[350px] rounded-full bg-vermilion/8 blur-[100px]" />
+      </div>
       <div className="mx-auto max-w-5xl text-center">
         {/* Section marker */}
         <motion.div
