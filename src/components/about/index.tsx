@@ -1,11 +1,13 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import Image from "next/image";
+import { useRef, useState } from "react";
 
 export function AboutUsSection() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
+  const [avatarFailed, setAvatarFailed] = useState(false);
 
   return (
     <section id="studio" className="bg-paper-elevated px-8 py-24" ref={ref}>
@@ -23,18 +25,20 @@ export function AboutUsSection() {
 
             <div className="mt-6 flex items-center gap-4">
               <div className="h-24 w-24 shrink-0 overflow-hidden rounded-full bg-ink">
-                {/* Replace src with /yaniv.jpg (or similar) once saved to public/ */}
-                <img
-                  src="/yaniv.jpg"
-                  alt="Yaniv Talmor"
-                  className="h-full w-full object-cover"
-                  onError={(e) => {
-                    const t = e.currentTarget;
-                    t.style.display = "none";
-                    t.parentElement!.innerHTML =
-                      '<span class="flex h-full w-full items-center justify-center font-sans text-lg font-semibold text-paper">YT</span>';
-                  }}
-                />
+                {avatarFailed ? (
+                  <span className="flex h-full w-full items-center justify-center font-sans text-lg font-semibold text-paper">
+                    YT
+                  </span>
+                ) : (
+                  <Image
+                    src="/yaniv.jpg"
+                    alt="Yaniv Talmor"
+                    width={96}
+                    height={96}
+                    className="h-full w-full object-cover"
+                    onError={() => setAvatarFailed(true)}
+                  />
+                )}
               </div>
               <div>
                 <h2 className="font-display text-2xl font-semibold text-ink">
@@ -46,7 +50,7 @@ export function AboutUsSection() {
               </div>
             </div>
 
-            <blockquote className="mt-10 border-l-2 border-vermilion pl-8">
+            <blockquote className="mt-10 border-l-2 border-azure pl-8">
               <p className="font-display text-2xl italic leading-snug text-ink md:text-3xl">
                 &ldquo;I love turning wild ideas into real products. If
                 you&apos;re building something ambitious, I want to be the

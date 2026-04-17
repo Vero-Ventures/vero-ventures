@@ -58,7 +58,7 @@ export function FAQSection() {
                 <span
                   className={cn(
                     "mt-1 shrink-0 font-mono text-xl text-ink-muted transition-transform duration-200",
-                    open === i ? "rotate-45 text-vermilion" : ""
+                    open === i ? "rotate-45 text-azure" : ""
                   )}
                 >
                   +

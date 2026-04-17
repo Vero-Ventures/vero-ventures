@@ -33,7 +33,7 @@ const config = {
         ink: "hsl(var(--color-ink))",
         "ink-muted": "hsl(var(--color-ink-muted))",
         hairline: "hsl(var(--color-hairline))",
-        vermilion: "hsl(var(--color-accent))", // accent blue (name kept for compatibility)
+        azure: "hsl(var(--color-accent))",
 
         // shadcn tokens
         border: "hsl(var(--border))",

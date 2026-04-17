@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
+import Image from "next/image";
 import { useRef } from "react";
 
 interface Project {
@@ -123,10 +124,13 @@ function ProjectRow({
 
 function ProjectImage({ project }: { project: Project }) {
   return (
-    <img
+    <Image
       src={project.image}
       alt={project.imageAlt}
-      className="block w-full transition-transform duration-700 hover:scale-[1.02]"
+      width={1669}
+      height={883}
+      sizes="(min-width: 768px) 50vw, 100vw"
+      className="block h-auto w-full transition-transform duration-700 hover:scale-[1.02]"
     />
   );
 }
@@ -169,7 +173,7 @@ function ProjectMeta({ project }: { project: Project }) {
 
       {/* Outcome */}
       {project.outcome && (
-        <div className="mt-5 flex items-start gap-2.5 border-l-2 border-vermilion pl-4">
+        <div className="mt-5 flex items-start gap-2.5 border-l-2 border-azure pl-4">
           <p className="text-sm font-medium text-ink">{project.outcome}</p>
         </div>
       )}
@@ -180,7 +184,7 @@ function ProjectMeta({ project }: { project: Project }) {
           href={project.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-6 inline-flex w-fit items-center gap-2 font-mono text-xs font-medium text-ink underline underline-offset-4 transition-colors hover:text-vermilion"
+          className="mt-6 inline-flex w-fit items-center gap-2 font-mono text-xs font-medium text-ink underline underline-offset-4 transition-colors hover:text-azure"
         >
           Live site ↗
         </a>

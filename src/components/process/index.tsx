@@ -48,7 +48,7 @@ export function ProcessSection() {
           </span>
           <h2 className="mt-3 font-display text-4xl font-semibold text-ink md:text-5xl">
             From &ldquo;let&apos;s go&rdquo; to{" "}
-            <em className="not-italic text-vermilion">live</em> in 1–2 weeks.
+            <em className="not-italic text-azure">live</em> in 1–2 weeks.
           </h2>
         </div>
 
@@ -72,7 +72,7 @@ export function ProcessSection() {
               >
                 {/* Week marker */}
                 <div className="flex items-start gap-4 md:flex-col md:gap-1">
-                  <div className="relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 border-vermilion bg-paper font-mono text-[10px] font-bold text-vermilion">
+                  <div className="relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 border-azure bg-paper font-mono text-[10px] font-bold text-azure">
                     {i + 1}
                   </div>
                   <div>
@@ -110,7 +110,7 @@ export function ProcessSection() {
             </p>
             <a
               href="#calendly"
-              className="inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 font-mono text-sm font-medium text-paper transition-all duration-200 hover:bg-vermilion"
+              className="inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 font-mono text-sm font-medium text-paper transition-all duration-200 hover:bg-azure"
             >
               Book now ↗
             </a>

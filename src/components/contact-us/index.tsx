@@ -11,7 +11,7 @@ export function ContactUsSection() {
           </span>
           <h2 className="mt-4 font-display text-5xl font-semibold text-white md:text-6xl lg:text-7xl">
             Have an idea worth building?{" "}
-            <em className="not-italic text-vermilion">
+            <em className="not-italic text-azure">
               Let&apos;s make it real.
             </em>
           </h2>
@@ -23,7 +23,7 @@ export function ContactUsSection() {
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
             <div className="flex items-center gap-2">
-              <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-vermilion" />
+              <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-azure" />
               <span className="font-mono text-xs text-white/50">
                 Spots fill fast — book before we&apos;re full
               </span>
@@ -42,7 +42,7 @@ export function ContactUsSection() {
         <div className="overflow-hidden rounded-sm border border-white/10 bg-[#F0F5FF]">
           <div className="border-b border-hairline px-6 py-4">
             <div className="flex items-center gap-2">
-              <span className="inline-block h-1.5 w-1.5 rounded-full bg-vermilion" />
+              <span className="inline-block h-1.5 w-1.5 rounded-full bg-azure" />
               <span className="font-mono text-[10px] uppercase tracking-widest text-[#526080]">
                 Schedule · 30 min intro call
               </span>

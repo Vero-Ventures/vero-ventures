@@ -101,7 +101,7 @@ export function OurServicesSection() {
                     className={cn(
                       "font-display text-2xl font-semibold transition-colors md:text-3xl",
                       open === i
-                        ? "text-vermilion"
+                        ? "text-azure"
                         : "text-ink group-hover:text-ink"
                     )}
                   >
@@ -114,7 +114,7 @@ export function OurServicesSection() {
                 <span
                   className={cn(
                     "ml-4 shrink-0 font-mono text-xl text-ink-muted transition-transform duration-200",
-                    open === i ? "rotate-45 text-vermilion" : ""
+                    open === i ? "rotate-45 text-azure" : ""
                   )}
                 >
                   +
@@ -146,7 +146,7 @@ export function OurServicesSection() {
                               key={j}
                               className="flex items-start gap-2 text-sm text-ink"
                             >
-                              <span className="mt-1.5 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-vermilion" />
+                              <span className="mt-1.5 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-azure" />
                               {d}
                             </li>
                           ))}

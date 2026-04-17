@@ -19,7 +19,7 @@ export function LogoMark({ className, size = 32 }: LogoMarkProps) {
       {/* Lightning bolt — upper body */}
       <polygon points="13,2 3,14 12,14 12,10" className="fill-ink" />
       {/* Lightning bolt — lower tip, accent color */}
-      <polygon points="12,14 11,22 21,10 12,10" className="fill-vermilion" />
+      <polygon points="12,14 11,22 21,10 12,10" className="fill-azure" />
     </svg>
   );
 }

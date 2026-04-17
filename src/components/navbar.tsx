@@ -26,9 +26,9 @@ export default function Navbar() {
       )}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-5">
-        <a href="/">
+        <Link href="/">
           <Logo markSize={24} />
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-10 md:flex">
           <NavLink href="#work">Work</NavLink>
@@ -41,7 +41,7 @@ export default function Navbar() {
           <ThemeToggle />
           <a
             href="#calendly"
-            className="hidden items-center gap-1.5 rounded-full border border-ink bg-ink px-5 py-2 font-mono text-xs font-medium text-paper transition-all duration-200 hover:border-vermilion hover:bg-vermilion md:flex"
+            className="hidden items-center gap-1.5 rounded-full border border-ink bg-ink px-5 py-2 font-mono text-xs font-medium text-paper transition-all duration-200 hover:border-azure hover:bg-azure md:flex"
           >
             Start a project ↗
           </a>

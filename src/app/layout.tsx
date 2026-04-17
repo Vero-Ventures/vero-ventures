@@ -91,7 +91,7 @@ function Footer() {
             © {new Date().getFullYear()} VERO VENTURES
           </p>
           <div className="flex items-center gap-2">
-            <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-vermilion" />
+            <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-azure" />
             <span className="font-mono text-xs text-ink-muted">
               NOW BOOKING
             </span>
