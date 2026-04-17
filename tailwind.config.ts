@@ -22,7 +22,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        display: ["var(--font-fraunces)", "Georgia", "serif"],
+        display: ["var(--font-instrument)", "Georgia", "serif"],
         sans: ["var(--font-geist)", "system-ui", "sans-serif"],
         mono: ["var(--font-jetbrains-mono)", "monospace"],
       },
