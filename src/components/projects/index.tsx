@@ -56,7 +56,7 @@ export function OurWorkSection() {
     <section id="work" className="px-8 pb-24 pt-0" ref={ref}>
       <div className="mx-auto max-w-7xl">
         {/* Header */}
-        <div className="mb-16 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+        <div className="my-16 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <div>
             <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink-muted">
               Selected work
