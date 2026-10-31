@@ -23,14 +23,14 @@ const steps = [
     phase: "Build",
     title: "Full-stack development. Daily updates. No surprises.",
     description:
-      "We push to a staging environment daily so you can see progress in real-time. You have a direct line to the person writing your code — no account manager, no ticket queue.",
+      "We push to a staging environment daily so you can see progress in real-time. You have a direct line to the senior engineer accountable for your build — no account manager, no ticket queue.",
   },
   {
     week: "D11–14",
     phase: "Ship",
     title: "Live. Yours. With handover.",
     description:
-      "Production deployment, domain setup, monitoring configured. Full code handover — you own everything. We stay available post-launch to squash anything that surfaces.",
+      "Production deployment, domain setup, monitoring configured. Full code handover, with all IP assigned to you under contract. We stay available post-launch to squash anything that surfaces.",
   },
 ];
 
