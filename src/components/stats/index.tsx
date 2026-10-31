@@ -6,7 +6,7 @@ import { useRef } from "react";
 const stats = [
   { value: "1–2", unit: "weeks", label: "Average ship time" },
   { value: "10+", unit: "", label: "Projects shipped" },
-  { value: "100%", unit: "", label: "Founder-led code" },
+  { value: "1", unit: "", label: "Senior lead on every project" },
   { value: "0", unit: "", label: "Templates used" },
 ];
 

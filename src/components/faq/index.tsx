@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: "Who owns the code and IP?",
-    a: "You do, 100%. All code, designs, and assets are fully transferred to you at the end of the project. No licensing fees, no lock-in.",
+    a: "You do. Our contract assigns all code, designs, and IP to you once the project is paid in full. No licensing fees, no lock-in.",
   },
   {
     q: "Do you work with non-technical founders?",
